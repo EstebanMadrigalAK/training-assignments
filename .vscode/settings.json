@@ -1,0 +1,8 @@
+{
+    "autoSnippet.snippets": [
+        { "pattern": "**/*.(js|ts|jsx|tsx|java|go)", "snippet": "ak-js-header" },
+        { "pattern": "**/*.html", "snippet": "ak-html-header" },
+        { "pattern": "**/*.html.erb", "snippet": "ak-erb-header" },
+        { "pattern": "**/*.rb", "snippet": "ak-ruby-header" },
+    ],
+}
