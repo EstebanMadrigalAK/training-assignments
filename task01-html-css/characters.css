@@ -7,38 +7,20 @@
 
 .grid-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     gap: 20px;
-
-    width: 940px;
-    height: 279.65px;
-    overflow-x: scroll;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .grid-item {
     position: relative;
-    /* display: flex;
-    align-items: flex-end;
-    text-align: center; */
+    display: flex; 
+    justify-content: center;
 
     width: 219.74px;
     height: 279px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .text-item{
     position: absolute;
-    width: 218.61px;
-    height: 38.65px;
-    
     top: 211.36px;
 
     font-family: 'Roboto Slab';
@@ -47,19 +29,15 @@
     font-size: 22px;
     line-height: 28px;
 
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-
     color: #FFF;
     z-index: 15;
 }
 
 .filter-item{
-    position: absolute;
-
-    width: 219.74px;
-    height: 279px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    
     background: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
     mix-blend-mode: multiply;
     border-radius: 19.7522px;
