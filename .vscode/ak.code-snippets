@@ -1,0 +1,15 @@
+{
+  "ak-js-header": {
+    "prefix": ["ak-js-header", "ak-css-header", "ak-java-header", "ak-go-header"],
+    "body": "/**\n * All Rights Reserved\n * This software is property information of AKUREY S.A.\n * Contact us at contact@akurey.com\n * @summary short description for the file\n */\n\n"
+  },
+  "ak-html-header": {
+    "body": "<!DOCTYPE html>\n<!-- \n  All Rights Reserved\n  This software is property information of AKUREY S.A.\n  Contact us at contact@akurey.com\n  @summary short description for the file\n-->\n\n"
+  },
+  "ak-erb-header": {
+    "body": "<%#\n  All Rights Reserved\n  This software is property information of AKUREY S.A.\n  Contact us at contact@akurey.com\n  @summary short description for the file\n%>\n\n"
+  },
+  "ak-ruby-header": {
+    "body": "##\n# All Rights Reserved\n# This software is property information of AKUREY S.A.\n# Contact us at contact@akurey.com\n# @summary short description for the file\n\n"
+  }
+}
