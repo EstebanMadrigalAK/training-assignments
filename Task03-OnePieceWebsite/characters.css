@@ -4,6 +4,11 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
+.menu, .third-item {
+  width: 45px;
+  height: 40px;
+}
+
 .text-item {
   font-family: "Roboto Slab";
   font-style: normal;
@@ -44,4 +49,24 @@
 
 .image-item {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.logo {
+  width: 281.025px;
+  height: 100px;
 }
