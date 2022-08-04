@@ -1,0 +1,47 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.text-item {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #FFF;
+}
+
+.grid-container {
+  display: flex;
+  gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 219.74px;
+  height: 279px;
+}
+
+.text-item {
+  position: absolute;
+  top: 211.36px;
+  z-index: 15;
+}
+
+.filter-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
+  mix-blend-mode: multiply;
+  border-radius: 19.7522px;
+  z-index: 10;
+}
+
+.image-item {
+  position: absolute;
+}
