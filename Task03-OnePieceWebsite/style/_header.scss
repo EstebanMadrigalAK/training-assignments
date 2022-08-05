@@ -15,7 +15,7 @@
     position: absolute;
     width: 100%;
     height: 320px;
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91.54%);
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91%);
     z-index: 10;
     bottom: -2px;
 }
@@ -61,7 +61,6 @@ p{
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    /* or 125% */
     
     letter-spacing: 0.25px;
 }
