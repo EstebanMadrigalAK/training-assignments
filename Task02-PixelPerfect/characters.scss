@@ -24,14 +24,14 @@
     display: flex; 
     justify-content: center;
 
-    width: 219.74px;
+    width: 219px;
     height: 279px;
 }
 
 .text-item{
     @extend %character-card-text-properties;
     position: absolute;
-    top: 211.36px;
+    top: 211px;
     z-index: 15;
 }
 
@@ -40,9 +40,9 @@
     height: 100%; 
     object-fit: cover;
     
-    background: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
+    background: linear-gradient(179deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
     mix-blend-mode: multiply;
-    border-radius: 19.7522px;
+    border-radius: 19px;
     z-index: 10;
 }
 
