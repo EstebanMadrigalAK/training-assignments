@@ -9,6 +9,24 @@
   height: 40px;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.logo {
+  width: 281.025px;
+  height: 100px;
+}
+
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
 .text-item {
   font-family: "Roboto Slab";
   font-style: normal;
@@ -54,19 +72,31 @@
   object-fit: cover;
 }
 
+.image-header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 640px;
+}
+
+.crew-filter {
+  position: absolute;
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91.54%);
+  z-index: 10;
+  bottom: -2px;
+}
+
+.crew-image {
+  position: absolute;
+  object-position: left bottom;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 button {
   background-color: transparent;
   border: none;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-}
-
-.logo {
-  width: 281.025px;
-  height: 100px;
 }

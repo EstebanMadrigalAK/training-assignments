@@ -1,0 +1,23 @@
+.image-header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 640px;
+}
+
+.crew-filter{
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91.54%);
+    z-index: 10;
+    bottom: -2px;
+}
+
+.crew-image{
+    position: absolute;
+    object-position: left bottom;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}

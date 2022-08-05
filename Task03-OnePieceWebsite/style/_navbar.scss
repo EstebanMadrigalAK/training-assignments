@@ -1,0 +1,31 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+
+%navbar-icon-size{
+    width: 45px;
+    height: 40px;
+}
+
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.third-item{
+    @extend %navbar-icon-size
+}
+
+.logo{
+    width: 281.025px;
+    height: 100px;
+}
+
+.menu{
+    @extend %navbar-icon-size
+}
