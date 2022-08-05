@@ -8,7 +8,26 @@
 <link rel="stylesheet" href="./style/homePage.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script>
+    function myFunction() {
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementsByClassName("read-all-label")[0];
+        let icon = document.getElementsByClassName("material-icons md-96")[0];
+        let logo = document.getElementsByClassName("logo-header")[0];
+        if (moreText.style.display === "none") {
+            moreText.style.display = "inline";
+            btnText.innerHTML = "Read Less"; 
+            icon.innerHTML = "expand_less";
+            logo.style.display = "inline";
+        } else {
+            moreText.style.display = "none";
+            btnText.innerHTML = "Read All";
+            icon.innerHTML = "expand_more";
+            logo.style.display = "none";
+        }
+    }
+</script>
 <body>
     <div class="navbar">
         <div class="firts-item">
@@ -29,15 +48,23 @@
                 <img class="crew-image" src="./svg/crew.jpeg" alt="Crew">
             </div>
         </div>
+        <img class="logo-header" src="./svg/One-Piece-Logo 1.png" alt="One-Piece-Logo2">
         <div class="sipnosis-section">
             <b class="sipnosis-title">Sipnosis</b>
             <p>
                 Dawn Island is an island located in the East Blue and where the Goa Kingdom is situated.<br><br>
-                It is the home island of Monkey D. Luffy and the starting point of his journey into piracy, as well as the home island of his father, Monkey D. Dragon.<br><br>
-                This is also the adopted home of Portgas D. Ace after the death of his mother and the home of Sabo and his family.<br><br>
-                Reverse Mountain is an extremely tall mountain at one of the points where the four Blues meet and is one of the two known entrances to the Grand Line.<br><br>
-                It is located in the Red Line and is the geographical antipode of Mary Geoise.
+                It is the home island of Monkey D. Luffy and the starting point of his journey into piracy, as well as the home island of his father, Monkey D. Dragon.<span id="more">
+                    <br><br>
+                    This is also the adopted home of Portgas D. Ace after the death of his mother and the home of Sabo and his family.<br><br>
+                    Reverse Mountain is an extremely tall mountain at one of the points where the four Blues meet and is one of the two known entrances to the Grand Line.<br><br>
+                    It is located in the Red Line and is the geographical antipode of Mary Geoise.
+                </span>
             </p>
+            <div class="line"></div>
+            <div class="expand-section" onclick="myFunction()">
+                <span class="material-icons md-96">expand_more</span>
+                <p class="read-all-label">Read All</p>
+            </div>
         </div>
     </div>
     <!-- <div class="grid-container">
