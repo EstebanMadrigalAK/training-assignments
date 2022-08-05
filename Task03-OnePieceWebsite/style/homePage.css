@@ -156,8 +156,8 @@ p {
   color: #0C75AF;
 }
 
-.material-icons.md-96 {
-  font-size: 96px;
+.material-icons.md-90 {
+  font-size: 90px;
   color: #0C75AF;
 }
 
@@ -166,11 +166,12 @@ p {
 }
 
 .logo-header {
+  position: relative;
+  top: -50px;
   z-index: 15;
-  width: 326px;
-  height: 126px;
+  width: 430px;
+  height: 146px;
   display: none;
-  bottom: -30px;
 }
 
 button {
