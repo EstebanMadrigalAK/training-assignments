@@ -6,26 +6,37 @@
  */
 
 %navbar-icon-size{
-    width: 45px;
-    height: 40px;
+    width: 18px;
+    height: 16px;
 }
 
 .navbar{
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding: 30px;
+    width: 390px;
+    height: 78px;
 }
 
 .third-item{
-    @extend %navbar-icon-size
+    @extend %navbar-icon-size;
+}
+
+.firts-item{
+    @extend %navbar-icon-size;
 }
 
 .logo{
-    width: 281px;
-    height: 100px;
+    width: 112px;
+    height: 40px;
 }
 
-.menu{
-    @extend %navbar-icon-size
+.menu-icon{
+    @extend %navbar-icon-size;
+}
+
+.menu-button{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }

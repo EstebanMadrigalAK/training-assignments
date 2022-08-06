@@ -5,15 +5,24 @@
     @summary short description for the file
 -->
 <!DOCTYPE html>
-<link rel="stylesheet" href="./style/homePage.css">
-<link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./style/homePage.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
 <script>
     function myFunction() {
         let moreText = document.getElementById("more");
         let btnText = document.getElementsByClassName("read-all-label")[0];
-        let icon = document.getElementsByClassName("material-icons md-90")[0];
+        let icon = document.getElementsByClassName("material-icons")[0];
         let logo = document.getElementsByClassName("logo-header")[0];
         if (moreText.style.display === "none") {
             moreText.style.display = "inline";
@@ -28,11 +37,12 @@
         }
     }
 </script>
+
 <body>
     <div class="navbar">
         <div class="firts-item">
             <button class="menu-button">
-                <img class="menu" src="./svg/menu.png" alt="menu">    
+                <img class="menu-icon" src="./svg/menu.png" alt="menu">    
             </button>
         </div>
         <div class="second-item">
@@ -62,11 +72,11 @@
             </p>
             <div class="line"></div>
             <div class="expand-section" onclick="myFunction()">
-                <span class="material-icons md-90">expand_more</span>
+                <span class="material-icons">expand_more</span>
                 <p class="read-all-label">Read All</p>
             </div>
         </div>
-        <input class="searchbar" placeholder="Search Characters, Islands or Objects">
+        <!-- <input class="searchbar" placeholder="Search Characters, Islands or Objects"> -->
     </div>
     <!-- <div class="grid-container">
         <div class="grid-item">
@@ -91,3 +101,5 @@
         </div>
     </div> -->
 </body>
+</html>
+
