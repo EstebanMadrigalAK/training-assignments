@@ -116,7 +116,6 @@
   padding: 8px;
   gap: 16px;
   width: 358px;
-  height: 256px;
   background: #FFFFFF;
   box-shadow: 0px 0px 8px #B8E1FF;
   border-radius: 6px;
@@ -131,39 +130,36 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
-  padding: 0px 0px 10px 0px;
 }
 
-p {
+.sipnosis-description {
   align-self: stretch;
   width: 342px;
-  height: 140px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.25px;
-  color: #000000;
 }
 
 .line {
-  Width: 342px;
-  height: 0px;
+  width: 342px;
   border: 0.5px solid #0C75AF;
   align-self: stretch;
 }
 
 .expand-section {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 16px;
-  width: 107px;
+  width: 125px;
   height: 24px;
 }
 
 .read-all-label {
-  width: 67px;
+  width: 85px;
   height: 24px;
   font-family: "Roboto";
   font-style: normal;
@@ -176,6 +172,8 @@ p {
 
 #read-more-icon {
   color: #0C75AF;
+  width: 24px;
+  height: 24px;
 }
 
 #more {
@@ -186,10 +184,9 @@ p {
   position: relative;
   top: -50px;
   z-index: 15;
-  width: 430px;
-  height: 146px;
+  width: 163px;
+  height: 58px;
   display: none;
-  transition: all 2s linear;
 }
 
 .searchbar-container {
