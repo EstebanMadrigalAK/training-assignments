@@ -14,18 +14,15 @@
     color: #FFF;
 }
 
-.characters-section{
+%section-properties{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     row-gap: 32px;
-
     width: 359px;
-    height: 24px;
 }
 
-.characters-header{
+.section-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +31,7 @@
     height: 24px;
 }
 
-.characters-title{
+.section-title{
     width: 94px;
     height: 24px;
 
@@ -67,33 +64,54 @@
     color: #0C75AF;
 }
 
-// ==============================================
-
-.characters-body{
-    position: relative;
-    align-self: stretch;
-}
-
-.characters-container{
-    position: absolute;
-
-    width: 359px;
-    height: 231px;
-
-    display: flex;
-    overflow: auto;
-}
-
 #flex-scroll { 
     display: flex;
     gap: 15px;
 }
 
+// sections
+.characters-section{
+    @extend %section-properties;
+    height: 287px;
+}
+
+.islands-section{
+    @extend %section-properties;
+    height: 249px;
+}
+
+// containers
+.characters-container{
+    display: flex;
+    overflow: auto;
+
+    width: 359px;
+    height: 231px;
+}
+
+.islands-container{
+    display: flex;
+    overflow: auto;
+
+    width: 359px;
+    height: 193px;
+}
+
+// item
 .characters-item {
-    // position: relative;
-    display: flex; 
+    display: flex;
+    position: relative;
+
     width: 182px;
     height: 231px;
+}
+
+.island-item{
+    display: flex;
+    position: relative;
+
+    width: 194px;
+    height: 193px;
 }
 
 .text-item{
@@ -109,6 +127,7 @@
 }
 
 .filter-item{
+    position: absolute;
     width: 100%; 
     height: 100%; 
     object-fit: cover;
@@ -119,9 +138,57 @@
     z-index: 10;
 }
 
-.image-item{
-    position: absolute;
+.character-image-item{
     width: 182px;
     height: 231px;
 }
 
+.island-image-item{
+    width: 194px;
+    height: 193px;
+}
+
+.island-caption-container{
+    position: absolute;
+    width: 178px;
+    height: 48px;
+    left: 8px;
+    top: 137px;
+
+    background: rgba(0, 96, 150, 0.59);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+}
+
+.island-caption-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.island-caption-location{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    letter-spacing: 0.4px;
+
+    color: #F4F4F4;
+}
+
+.material-icons.location-icon { 
+    color: rgba(255, 255, 255, 1);
+    font-size: small;
+}
+
+.island-text{
+    position: absolute;
+    align-self: center;
+    top: 5px;
+    left: 13px;
+}
