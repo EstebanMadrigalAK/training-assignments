@@ -1,0 +1,66 @@
+@use 'content';
+
+.mist-object-section{
+    @extend %section-properties;
+    height: 484px;
+}
+
+.mist-object-container{
+    display: flex;
+
+    flex-direction: column;
+
+    width: 358px;
+    height: 428px;
+    row-gap: 16px;
+}
+
+.mist-object-item{
+    display: flex;
+    position: relative;
+}
+
+.mist-object-img{
+    width: 174.49px;
+    height: 132px;
+}
+
+.material-icons.location-icon { 
+    color: rgba(255, 255, 255, 1);
+    font-size: small;
+}
+
+.mist-object-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    padding: 8px;
+    gap: 4px;
+
+    left: 117.33px;
+    background: rgba(0, 96, 150, 0.59);
+    backdrop-filter: blur(4px);
+    border-radius: 0px 6px 6px 0px;
+}
+
+.mist-object-caption-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.mist-object-caption-description{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+    color: #F4F4F4;
+}

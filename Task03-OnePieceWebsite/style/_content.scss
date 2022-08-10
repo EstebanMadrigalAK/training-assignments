@@ -1,0 +1,62 @@
+%character-card-text-properties{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFF;
+}
+
+%section-properties{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 32px;
+    width: 359px;
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 359px;
+    height: 24px;
+}
+
+.section-title{
+    height: 24px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #171717;
+}
+
+.see-all-btn{
+    width: 49px;
+    height: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: 0.25px;
+
+    color: #0C75AF;
+}
+
+#flex-scroll { 
+    display: flex;
+    gap: 15px;
+}

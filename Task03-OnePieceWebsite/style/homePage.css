@@ -28,178 +28,6 @@
   object-fit: cover;
 }
 
-/**
- * All Rights Reserved
- * This software is property information of AKUREY S.A.
- * Contact us at contact@akurey.com
- * @summary short description for the file
- */
-.text-item {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFF;
-}
-
-.islands-section, .characters-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  row-gap: 32px;
-  width: 359px;
-}
-
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 359px;
-  height: 24px;
-}
-
-.section-title {
-  width: 94px;
-  height: 24px;
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  display: flex;
-  align-items: flex-end;
-  text-align: center;
-  letter-spacing: 0.1px;
-  color: #171717;
-}
-
-.see-all-btn {
-  width: 49px;
-  height: 20px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-  color: #0C75AF;
-}
-
-#flex-scroll {
-  display: flex;
-  gap: 15px;
-}
-
-.characters-section {
-  height: 287px;
-}
-
-.islands-section {
-  height: 249px;
-}
-
-.characters-container {
-  display: flex;
-  overflow: auto;
-  width: 359px;
-  height: 231px;
-}
-
-.islands-container {
-  display: flex;
-  overflow: auto;
-  width: 359px;
-  height: 193px;
-}
-
-.characters-item {
-  display: flex;
-  position: relative;
-  width: 182px;
-  height: 231px;
-}
-
-.island-item {
-  display: flex;
-  position: relative;
-  width: 194px;
-  height: 193px;
-}
-
-.text-item {
-  position: absolute;
-  text-align: center;
-  width: 181px;
-  height: 32px;
-  top: 175px;
-  letter-spacing: -0.02em;
-  z-index: 14;
-}
-
-.filter-item {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
-  mix-blend-mode: multiply;
-  border-radius: 19px;
-  z-index: 10;
-}
-
-.character-image-item {
-  width: 182px;
-  height: 231px;
-}
-
-.island-image-item {
-  width: 194px;
-  height: 193px;
-}
-
-.island-caption-container {
-  position: absolute;
-  width: 178px;
-  height: 48px;
-  left: 8px;
-  top: 137px;
-  background: rgba(0, 96, 150, 0.59);
-  backdrop-filter: blur(4px);
-  border-radius: 6px;
-}
-
-.island-caption-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 16px;
-  color: #FFFFFF;
-}
-
-.island-caption-location {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.4px;
-  color: #F4F4F4;
-}
-
-.material-icons.location-icon {
-  color: rgb(255, 255, 255);
-  font-size: small;
-}
-
-.island-text {
-  position: absolute;
-  align-self: center;
-  top: 5px;
-  left: 13px;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -341,6 +169,220 @@
 #search-icon {
   color: #7D7D7D;
   font-size: 30px;
+}
+
+.text-item {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFF;
+}
+
+.mist-object-section, .islands-section, .characters-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 32px;
+  width: 359px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 359px;
+  height: 24px;
+}
+
+.section-title {
+  height: 24px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #171717;
+}
+
+.see-all-btn {
+  width: 49px;
+  height: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #0C75AF;
+}
+
+#flex-scroll {
+  display: flex;
+  gap: 15px;
+}
+
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.characters-section {
+  height: 287px;
+}
+
+.characters-container {
+  display: flex;
+  overflow: auto;
+  width: 359px;
+  height: 231px;
+}
+
+.characters-item {
+  display: flex;
+  position: relative;
+  width: 182px;
+  height: 231px;
+}
+
+.text-item {
+  position: absolute;
+  text-align: center;
+  width: 181px;
+  height: 32px;
+  top: 175px;
+  letter-spacing: -0.02em;
+  z-index: 14;
+}
+
+.filter-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
+  mix-blend-mode: multiply;
+  border-radius: 19px;
+  z-index: 10;
+}
+
+.islands-section {
+  height: 249px;
+}
+
+.islands-container {
+  display: flex;
+  overflow: auto;
+  width: 359px;
+  height: 193px;
+}
+
+.island-item {
+  display: flex;
+  position: relative;
+  width: 194px;
+  height: 193px;
+}
+
+.island-caption-container {
+  position: absolute;
+  width: 178px;
+  height: 48px;
+  left: 8px;
+  top: 137px;
+  background: rgba(0, 96, 150, 0.59);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+}
+
+.island-caption-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.island-caption-location {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #F4F4F4;
+}
+
+.island-text {
+  position: absolute;
+  align-self: center;
+  top: 5px;
+  left: 13px;
+}
+
+.mist-object-section {
+  height: 484px;
+}
+
+.mist-object-container {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  height: 428px;
+  row-gap: 16px;
+}
+
+.mist-object-item {
+  display: flex;
+  position: relative;
+}
+
+.mist-object-img {
+  width: 174.49px;
+  height: 132px;
+}
+
+.material-icons.location-icon {
+  color: rgb(255, 255, 255);
+  font-size: small;
+}
+
+.mist-object-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 4px;
+  left: 117.33px;
+  background: rgba(0, 96, 150, 0.59);
+  backdrop-filter: blur(4px);
+  border-radius: 0px 6px 6px 0px;
+}
+
+.mist-object-caption-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.mist-object-caption-description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* or 114% */
+  color: #F4F4F4;
 }
 
 button {

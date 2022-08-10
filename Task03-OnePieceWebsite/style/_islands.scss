@@ -1,0 +1,62 @@
+@use 'content';
+
+.islands-section{
+    @extend %section-properties;
+    height: 249px;
+}
+
+.islands-container{
+    display: flex;
+    overflow: auto;
+
+    width: 359px;
+    height: 193px;
+}
+
+.island-item{
+    display: flex;
+    position: relative;
+
+    width: 194px;
+    height: 193px;
+}
+
+.island-caption-container{
+    position: absolute;
+    width: 178px;
+    height: 48px;
+    left: 8px;
+    top: 137px;
+
+    background: rgba(0, 96, 150, 0.59);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+}
+
+.island-caption-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.island-caption-location{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    letter-spacing: 0.4px;
+
+    color: #F4F4F4;
+}
+
+.island-text{
+    position: absolute;
+    align-self: center;
+    top: 5px;
+    left: 13px;
+}
