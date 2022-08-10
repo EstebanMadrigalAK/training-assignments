@@ -4,8 +4,8 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
-.menu-icon, .firts-item, .third-item {
-  width: 18px;
+.third-item, .menu-button {
+  width: 15%;
   height: 16px;
 }
 
@@ -13,19 +13,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 390px;
+  width: 100%;
   height: 78px;
 }
 
-.logo {
+.navbar-logo {
   width: 112px;
   height: 40px;
-}
-
-.menu-button {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 .header {
@@ -405,7 +399,7 @@
   align-items: center;
   margin-top: 80px;
   gap: 38px;
-  width: 390px;
+  width: 100%;
   height: 271px;
   background: #0C75AF;
 }
@@ -436,6 +430,6 @@ button {
 }
 
 body {
-  width: 390px;
+  width: 100%;
   margin: auto;
 }
