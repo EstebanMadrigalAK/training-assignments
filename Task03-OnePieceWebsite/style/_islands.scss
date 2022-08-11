@@ -33,24 +33,11 @@
 }
 
 .island-caption-title{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 16px;
-    color: #FFFFFF;
+    @include text-properties ('Roboto',700,13px,16px,white);
 }
 
 .island-caption-location{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-
-    letter-spacing: 0.4px;
-
-    color: #F4F4F4;
+    @include text-properties ('Roboto',400,14px,16px,#F4F4F4,0.4px);
 }
 
 .island-text{

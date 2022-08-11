@@ -422,9 +422,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
+  color: white;
   letter-spacing: 0.4px;
-  color: #FFFFFF;
+  text-align: center;
 }
 
 button {

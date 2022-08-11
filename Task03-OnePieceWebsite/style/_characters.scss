@@ -32,14 +32,15 @@
 }
 
 .text-item{
-    @extend %character-card-text-properties;
+
+    @include text-properties ('Roboto',500,18px,21px,white,-0.02em);
+
     position: absolute;
     text-align: center;
     width: 181px;
     height: 32px;
     top: 175px;
 
-    letter-spacing: -0.02em;
     z-index: 14;
 }
 

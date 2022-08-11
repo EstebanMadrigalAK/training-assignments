@@ -52,25 +52,11 @@
 }
 
 .mist-object-caption-title{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 16px;
-
-    color: #FFFFFF;
-
+    @include text-properties ('Roboto',700,13px,16px,white);
     margin: 5px;
 }
 
 .mist-object-caption-description{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #F4F4F4;
-
+    @include text-properties ('Roboto',400,14px,16px,#F4F4F4);
     margin: 5px;
 }

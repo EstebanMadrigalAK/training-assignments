@@ -1,11 +1,12 @@
-%character-card-text-properties{
-    font-family: 'Roboto Slab';
+@mixin text-properties ($family,$weight,$size,$height,$color:default,$spacing:default) {
+    font-family: $family;
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFF;
-}
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+    letter-spacing: $spacing;
+ }
 
 %section-properties{
     display: flex;
@@ -24,7 +25,6 @@
 }
 
 // first part
-
 .first-part{
     display: flex;
     flex-direction: column;
@@ -88,24 +88,14 @@
 .sipnosis-title{
     width: 95%;
     height: 28px;
-        
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
+
+    @include text-properties ('Roboto Slab',700,22px,28px);
 }
 
 .sipnosis-description{
     width: 95%;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
-    letter-spacing: 0.25px;
+    @include text-properties ('Roboto',400,16px,20px,0.25px);
 }
 
 .line{
@@ -129,15 +119,7 @@
     width: 85px;
     height: 24px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-
-    letter-spacing: 0.15px;
-
-    color: #0C75AF;
+    @include text-properties ('Roboto',400,18px,24px,#0C75AF,0.25px);
 }
 
 #read-more-icon{
@@ -168,31 +150,14 @@
 
 .section-title{
     height: 24px;
-
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-
-    letter-spacing: 0.1px;
-
-    color: #171717;
+    @include text-properties ('Roboto Slab',700,18px,24px,#171717,0.1px);
 }
 
 .see-all-btn{
     width: 49px;
     height: 20px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
-    letter-spacing: 0.25px;
-
-    color: #0C75AF;
+    @include text-properties ('Roboto',400,16px,20px,#0C75AF,0.25px);
 }
 
 #flex-scroll { 
@@ -222,15 +187,7 @@
 
     justify-self: center;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
-    letter-spacing: 0.25px;
-
-    color: #7D7D7D;
+    @include text-properties ('Roboto',400,16px,20px,#7D7D7D,0.25px);
 
 }
 
