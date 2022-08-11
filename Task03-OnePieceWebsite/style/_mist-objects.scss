@@ -6,18 +6,24 @@
 }
 
 .mist-object-container{
+    padding-top: 32px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    flex-direction: column;
-
-    width: 358px;
+    width: 100%;
     height: 428px;
-    row-gap: 16px;
+    gap: 16px;
+    overflow: hidden;
 }
 
 .mist-object-item{
     display: flex;
+
+    width: 358px;
+    height: 132px;
     position: relative;
+    overflow: auto;
 }
 
 .mist-object-img{
@@ -35,10 +41,11 @@
     display: flex;
     flex-direction: column;
 
-    padding: 8px;
-    gap: 4px;
-
     left: 117.33px;
+
+    width: 240.67px;
+    height: 132px;
+
     background: rgba(0, 96, 150, 0.59);
     backdrop-filter: blur(4px);
     border-radius: 0px 6px 6px 0px;
@@ -52,6 +59,8 @@
     line-height: 16px;
 
     color: #FFFFFF;
+
+    margin: 5px;
 }
 
 .mist-object-caption-description{
@@ -60,7 +69,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    /* or 114% */
 
     color: #F4F4F4;
+
+    margin: 5px;
 }

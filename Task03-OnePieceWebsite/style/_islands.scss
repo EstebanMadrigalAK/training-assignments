@@ -2,14 +2,13 @@
 
 .islands-section{
     @extend %section-properties;
-    height: 249px;
 }
 
 .islands-container{
     display: flex;
     overflow: auto;
 
-    width: 359px;
+    width: 100%;
     height: 193px;
 }
 
