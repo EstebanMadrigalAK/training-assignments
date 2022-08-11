@@ -22,8 +22,9 @@
     display: flex;
     position: relative;
 
-    width: 194px;
-    height: 193px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .island-caption-container{
