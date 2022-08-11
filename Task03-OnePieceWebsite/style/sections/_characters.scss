@@ -5,15 +5,11 @@
  * @summary short description for the file
  */
 
- @use 'content';
-
-// sections
 .characters-section{
     @include flex-column-centered (32px);
     justify-content: space-between;
 }
 
-// containers
 .characters-container{
     display: flex;
     overflow: auto;
@@ -22,8 +18,6 @@
     height: 231px;
 }
 
-
-// item
 .characters-item {
     display: flex;
     position: relative;
@@ -33,7 +27,6 @@
 }
 
 .text-item{
-
     @include text-properties ('Roboto',500,18px,21px,white,-0.02em);
 
     position: absolute;

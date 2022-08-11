@@ -4,6 +4,12 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
 .third-item, .menu-button {
   width: 15%;
   height: 16px;
@@ -22,37 +28,26 @@
   height: 40px;
 }
 
-.text-item {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFF;
-}
-
-.mist-object-section, .islands-section, .characters-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  row-gap: 32px;
-  width: 100%;
-}
-
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  width: 100%;
+  row-gap: 50px;
 }
 
-.first-part {
+.content-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 50px;
+  row-gap: 50px;
 }
 
 .image-header {
@@ -79,14 +74,6 @@
   object-fit: cover;
 }
 
-.second-part {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 50px;
-}
-
 .margin-container {
   width: 90%;
 }
@@ -95,9 +82,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8px;
-  gap: 16px;
   width: 100%;
+  row-gap: 16px;
+  padding-top: 8px;
   box-shadow: 0px 0px 8px #B8E1FF;
   border-radius: 6px;
 }
@@ -110,6 +97,8 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
+  color: default;
+  letter-spacing: default;
 }
 
 .sipnosis-description {
@@ -119,7 +108,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0.25px;
+  color: 0.25px;
+  letter-spacing: default;
 }
 
 .line {
@@ -145,8 +135,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.15px;
   color: #0C75AF;
+  letter-spacing: 0.25px;
 }
 
 #read-more-icon {
@@ -181,8 +171,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.1px;
   color: #171717;
+  letter-spacing: 0.1px;
 }
 
 .see-all-btn {
@@ -193,8 +183,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0.25px;
   color: #0C75AF;
+  letter-spacing: 0.25px;
 }
 
 #flex-scroll {
@@ -224,8 +214,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0.25px;
   color: #7D7D7D;
+  letter-spacing: 0.25px;
 }
 
 #search-icon {
@@ -240,6 +230,51 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
+.custom-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 38px;
+  justify-content: center;
+  margin-top: 80px;
+  height: 271px;
+  background: #0C75AF;
+}
+
+.footer-image {
+  width: 97px;
+  height: 89px;
+}
+
+.footer-text {
+  width: 286px;
+  height: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.characters-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 32px;
+  justify-content: space-between;
+}
+
 .characters-container {
   display: flex;
   overflow: auto;
@@ -255,12 +290,18 @@
 }
 
 .text-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  letter-spacing: -0.02em;
   position: absolute;
   text-align: center;
   width: 181px;
   height: 32px;
   top: 175px;
-  letter-spacing: -0.02em;
   z-index: 14;
 }
 
@@ -273,6 +314,21 @@
   mix-blend-mode: multiply;
   border-radius: 19px;
   z-index: 10;
+}
+
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.islands-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 32px;
+  justify-content: space-between;
 }
 
 .islands-container {
@@ -306,7 +362,8 @@
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: white;
+  letter-spacing: default;
 }
 
 .island-caption-location {
@@ -315,8 +372,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.4px;
   color: #F4F4F4;
+  letter-spacing: 0.4px;
 }
 
 .island-text {
@@ -326,14 +383,25 @@
   left: 13px;
 }
 
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
 .mist-object-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 32px;
+  justify-content: space-between;
   height: 484px;
 }
 
 .mist-object-container {
   padding-top: 32px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: 428px;
@@ -377,7 +445,8 @@
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: white;
+  letter-spacing: default;
   margin: 5px;
 }
 
@@ -388,43 +457,8 @@
   font-size: 14px;
   line-height: 16px;
   color: #F4F4F4;
+  letter-spacing: default;
   margin: 5px;
-}
-
-/**
- * All Rights Reserved
- * This software is property information of AKUREY S.A.
- * Contact us at contact@akurey.com
- * @summary short description for the file
- */
-.custom-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 80px;
-  gap: 38px;
-  width: 100%;
-  height: 271px;
-  background: #0C75AF;
-}
-
-.footer-image {
-  width: 97px;
-  height: 89px;
-}
-
-.footer-text {
-  width: 286px;
-  height: 48px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: white;
-  letter-spacing: 0.4px;
-  text-align: center;
 }
 
 button {

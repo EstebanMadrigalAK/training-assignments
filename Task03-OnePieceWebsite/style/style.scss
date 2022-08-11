@@ -1,0 +1,14 @@
+@import './sass-utils/mixins';
+@import './layouts/navbar','./layouts/content','./layouts/footer';
+@import './sections/characters','./sections/islands','./sections/mist-objects';                   
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+}
+
