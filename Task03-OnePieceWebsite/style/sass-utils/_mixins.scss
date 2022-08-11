@@ -22,3 +22,17 @@
     width: 100%;
     row-gap: $row-gap;
 }
+
+@mixin items-container ($height,$overflow:auto) {
+    display: flex;
+    overflow: $overflow;
+
+    width: 100%;
+    height: $height;
+}
+
+@mixin fit-parent {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

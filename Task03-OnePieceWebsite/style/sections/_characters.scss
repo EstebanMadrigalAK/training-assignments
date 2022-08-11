@@ -11,19 +11,14 @@
 }
 
 .characters-container{
-    display: flex;
-    overflow: auto;
-
-    width: 100%;
-    height: 231px;
+    @include items-container (231px);
 }
 
 .characters-item {
     display: flex;
     position: relative;
 
-    width: 182px;
-    height: 231px;
+    @include fit-parent;
 }
 
 .text-item{
@@ -31,8 +26,7 @@
 
     position: absolute;
     text-align: center;
-    width: 181px;
-    height: 32px;
+    width: 100%;
     top: 175px;
 
     z-index: 14;
@@ -40,17 +34,10 @@
 
 .filter-item{
     position: absolute;
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
+    @include fit-parent;
     
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
     mix-blend-mode: multiply;
     border-radius: 19px;
     z-index: 10;
 }
-
-
-
-
-

@@ -34,6 +34,127 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.searchbar-container {
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  height: 56px;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 16px 0px 16px 8px;
+  border: 1px solid #B5B5B5;
+  border-radius: 6px;
+}
+
+.searchbar {
+  border: none;
+  width: 90%;
+  height: 20px;
+  justify-self: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7D7D7D;
+  letter-spacing: 0.25px;
+}
+
+#search-icon {
+  color: #7D7D7D;
+  font-size: 30px;
+  width: 10%;
+}
+
+.see-all-btn {
+  width: 49px;
+  height: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0C75AF;
+  letter-spacing: 0.25px;
+}
+
+#more {
+  display: none;
+}
+
+#read-more-icon {
+  color: #0C75AF;
+  width: 24px;
+  height: 24px;
+}
+
+.read-all-label {
+  width: 85px;
+  height: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0C75AF;
+  letter-spacing: 0.25px;
+}
+
+.sipnosis-title {
+  width: 95%;
+  height: 28px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: default;
+  letter-spacing: default;
+}
+
+.sipnosis-description {
+  width: 95%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: 0.25px;
+  letter-spacing: default;
+}
+
+.line {
+  width: 90%;
+  border: 0.5px solid #0C75AF;
+}
+
+.sipnosis-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 16px;
+  padding-top: 8px;
+  box-shadow: 0px 0px 8px #B8E1FF;
+  border-radius: 6px;
+}
+
+.expand-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  width: 125px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -69,84 +190,13 @@
 .crew-image {
   position: absolute;
   object-position: center;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 .margin-container {
   width: 90%;
-}
-
-.sipnosis-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  row-gap: 16px;
-  padding-top: 8px;
-  box-shadow: 0px 0px 8px #B8E1FF;
-  border-radius: 6px;
-}
-
-.sipnosis-title {
-  width: 95%;
-  height: 28px;
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
-  color: default;
-  letter-spacing: default;
-}
-
-.sipnosis-description {
-  width: 95%;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: 0.25px;
-  letter-spacing: default;
-}
-
-.line {
-  width: 90%;
-  border: 0.5px solid #0C75AF;
-}
-
-.expand-section {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 16px;
-  width: 125px;
-  height: 24px;
-  margin-bottom: 10px;
-}
-
-.read-all-label {
-  width: 85px;
-  height: 24px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #0C75AF;
-  letter-spacing: 0.25px;
-}
-
-#read-more-icon {
-  color: #0C75AF;
-  width: 24px;
-  height: 24px;
-}
-
-#more {
-  display: none;
 }
 
 .logo-header {
@@ -175,56 +225,13 @@
   letter-spacing: 0.1px;
 }
 
-.see-all-btn {
-  width: 49px;
-  height: 20px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #0C75AF;
-  letter-spacing: 0.25px;
-}
-
 #flex-scroll {
   display: flex;
   gap: 15px;
   margin: 0 5% 0 5%;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.searchbar-container {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  padding: 16px 0px 16px 8px;
   width: 100%;
-  height: 56px;
-  border: 1px solid #B5B5B5;
-  border-radius: 6px;
-}
-
-.searchbar {
-  border: none;
-  width: 90%;
-  height: 20px;
-  justify-self: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #7D7D7D;
-  letter-spacing: 0.25px;
-}
-
-#search-icon {
-  color: #7D7D7D;
-  font-size: 30px;
-  width: 10%;
+  object-fit: cover;
 }
 
 /**
@@ -288,8 +295,9 @@
 .characters-item {
   display: flex;
   position: relative;
-  width: 182px;
-  height: 231px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .text-item {
@@ -302,16 +310,15 @@
   letter-spacing: -0.02em;
   position: absolute;
   text-align: center;
-  width: 181px;
-  height: 32px;
+  width: 100%;
   top: 175px;
   z-index: 14;
 }
 
 .filter-item {
   position: absolute;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
   mix-blend-mode: multiply;
@@ -404,20 +411,20 @@
 }
 
 .mist-object-container {
-  padding-top: 32px;
   display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
   width: 100%;
   height: 428px;
+  padding-top: 32px;
+  flex-wrap: wrap;
   gap: 16px;
-  overflow: hidden;
 }
 
 .mist-object-item {
   display: flex;
+  position: relative;
   width: 358px;
   height: 132px;
-  position: relative;
   overflow: auto;
 }
 
