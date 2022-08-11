@@ -1,7 +1,8 @@
 @use 'content';
 
 .islands-section{
-    @extend %section-properties;
+    @include flex-column-centered (32px);
+    justify-content: space-between;
 }
 
 .islands-container{

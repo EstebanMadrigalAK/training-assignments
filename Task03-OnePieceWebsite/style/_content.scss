@@ -1,13 +1,3 @@
-@mixin text-properties ($family,$weight,$size,$height,$color:default,$spacing:default) {
-    font-family: $family;
-    font-style: normal;
-    font-weight: $weight;
-    font-size: $size;
-    line-height: $height;
-    color: $color;
-    letter-spacing: $spacing;
- }
-
 %section-properties{
     display: flex;
     flex-direction: column;
@@ -18,21 +8,12 @@
 }
 
 .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+    @include flex-column-centered (50px);
 }
 
-// first part
-.first-part{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 50px;
+.content-section{
+    @include flex-column-centered (50px);
 }
-
 .image-header{
     position: relative;
     display: flex;
@@ -42,7 +23,6 @@
 
 .crew-filter{
     position: absolute;
-    width: 100%;
     height: 163px;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91%);
     z-index: 10;
@@ -51,18 +31,10 @@
 
 .crew-image{
     position: absolute;
-    object-position:center;
+    object-position: center;
     width: 100%; 
     height: 100%; 
     object-fit: cover;
-}
-
-.second-part{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 50px;
 }
 
 .margin-container{
@@ -72,15 +44,8 @@
 // SINOPSIS SECTION ==============================
 
 .sipnosis-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    @include flex-column-centered (16px);
     padding-top: 8px;
-    gap: 16px;
-    
-    width: 100%;
-    
     box-shadow: 0px 0px 8px #B8E1FF;
     border-radius: 6px;
 }
@@ -105,8 +70,6 @@
 
 .expand-section{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     gap: 16px;
 
     width: 125px;

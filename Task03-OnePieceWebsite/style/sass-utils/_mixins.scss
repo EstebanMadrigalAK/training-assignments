@@ -1,0 +1,24 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+
+@mixin text-properties ($family,$weight,$size,$height,$color:default,$spacing:default) {
+    font-family: $family;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+    letter-spacing: $spacing;
+}
+
+@mixin flex-column-centered ($row-gap:default) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    row-gap: $row-gap;
+}

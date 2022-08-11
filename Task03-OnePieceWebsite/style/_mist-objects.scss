@@ -1,14 +1,14 @@
 @use 'content';
 
 .mist-object-section{
-    @extend %section-properties;
+    @include flex-column-centered (32px);
+    justify-content: space-between;
     height: 484px;
 }
 
 .mist-object-container{
     padding-top: 32px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 
     width: 100%;
