@@ -7,13 +7,10 @@
 
 .mist-object-section{
     @include flex-column-centered (32px);
-    justify-content: space-between;
-    height: 484px;
 }
 
 .mist-object-container{
-    @include items-container (428px,hidden);
-    padding-top: 32px;
+    @include items-container (428px);
     flex-wrap: wrap;
     gap: 16px;
 }

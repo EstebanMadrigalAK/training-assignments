@@ -141,6 +141,7 @@
   width: 100%;
   row-gap: 16px;
   padding-top: 8px;
+  background-color: white;
   box-shadow: 0px 0px 8px #B8E1FF;
   border-radius: 6px;
 }
@@ -161,20 +162,15 @@
   align-items: center;
   width: 100%;
   row-gap: 50px;
-}
-
-.content-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  row-gap: 50px;
+  padding: 0 4% 0 4%;
+  box-sizing: border-box;
 }
 
 .image-header {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 108.6%;
+  left: -4.3%;
   height: 260px;
 }
 
@@ -195,10 +191,6 @@
   object-fit: cover;
 }
 
-.margin-container {
-  width: 90%;
-}
-
 .logo-header {
   position: absolute;
   top: 300px;
@@ -212,6 +204,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .section-title {
@@ -227,13 +222,38 @@
 
 #flex-scroll {
   display: flex;
-  gap: 15px;
-  margin: 0 5% 0 5%;
-  height: 100%;
+  overflow: auto;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  gap: 15px;
 }
 
+.block {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .image-header {
+    height: 444px;
+    position: absolute;
+    z-index: -2;
+  }
+  .crew-filter {
+    display: none;
+  }
+  .margin-container {
+    width: 90%;
+  }
+  .block {
+    display: inline-block;
+    height: 337px;
+  }
+  #flex-scroll {
+    margin: 0;
+    gap: 20px;
+  }
+}
 /**
  * All Rights Reserved
  * This software is property information of AKUREY S.A.
@@ -287,17 +307,17 @@
 
 .characters-container {
   display: flex;
-  overflow: auto;
-  width: 100%;
+  width: 104%;
   height: 231px;
+  position: relative;
+  left: 2.2%;
 }
 
 .characters-item {
   display: flex;
   position: relative;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  width: 182px;
+  height: 231px;
 }
 
 .text-item {
@@ -326,6 +346,33 @@
   z-index: 10;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .characters-container {
+    display: flex;
+    overflow: auto;
+    height: 184px;
+  }
+  .text-item {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    letter-spacing: 0.01px;
+    width: 145px;
+    top: 140px;
+  }
+  .characters-item {
+    display: flex;
+    position: relative;
+    width: 25%;
+  }
+  .filter-item {
+    width: 145px;
+  }
+}
 /**
  * All Rights Reserved
  * This software is property information of AKUREY S.A.
@@ -343,17 +390,17 @@
 
 .islands-container {
   display: flex;
-  overflow: auto;
-  width: 100%;
+  width: 104%;
   height: 193px;
+  position: relative;
+  left: 2.2%;
 }
 
 .island-item {
   display: flex;
   position: relative;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  width: 194px;
+  height: 193px;
 }
 
 .island-caption-container {
@@ -394,6 +441,30 @@
   left: 13px;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .islands-container {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    height: 193px;
+  }
+  .text-item {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    letter-spacing: 0.01px;
+    top: 140px;
+  }
+  .island-item {
+    display: flex;
+    position: relative;
+    width: 33%;
+  }
+}
 /**
  * All Rights Reserved
  * This software is property information of AKUREY S.A.
@@ -406,16 +477,13 @@
   align-items: center;
   width: 100%;
   row-gap: 32px;
-  justify-content: space-between;
-  height: 484px;
 }
 
 .mist-object-container {
   display: flex;
-  overflow: hidden;
+  overflow: auto;
   width: 100%;
   height: 428px;
-  padding-top: 32px;
   flex-wrap: wrap;
   gap: 16px;
 }

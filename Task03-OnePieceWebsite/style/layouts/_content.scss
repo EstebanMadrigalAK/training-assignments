@@ -4,21 +4,20 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
-
 @import '../components/searchbar';
 @import '../sections/sipnosis';
+
 .content{
     @include flex-column-centered (50px);
-}
-
-.content-section{
-    @include flex-column-centered (50px);
+    padding: 0 4% 0 4%;
+    box-sizing: border-box;
 }
 
 .image-header{
     position: relative;
     display: flex;
-    width: 100%;
+    width: 108.6%;
+    left: -4.3%;
     height: 260px;
 }
 
@@ -37,10 +36,6 @@
     @include fit-parent;
 }
 
-.margin-container{
-    width: 90%;
-}
-
 .logo-header{
     position: absolute;
     top: 300px;
@@ -54,6 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include fit-parent;
 }
 
 .section-title{
@@ -62,8 +58,37 @@
 }
 
 #flex-scroll { 
-    display: flex;
+    @include items-container (100%);
     gap: 15px;
-    margin: 0 5% 0 5%;
-    @include fit-parent;
+}
+
+.block{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .image-header{
+        height: 444px;
+        position: absolute;
+        z-index: -2;
+    }
+
+    .crew-filter{
+        display: none;
+    }
+
+    .margin-container{
+        width: 90%;
+    }
+
+    .block{
+        display: inline-block;
+        height: 337px;
+    }
+
+    #flex-scroll {
+        margin: 0;
+        gap: 20px;
+    }
 }
