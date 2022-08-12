@@ -60,9 +60,20 @@
     margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 768px) {
-    /* For tablet: */
-    // .sipnosis-section{
-    //     position: relative;
-    // }
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    .sipnosis-section{
+        width: 30%;
+        padding: 32px 16px;
+    }
+    .expand-section, .line{
+        display: none;
+    }
+    .sipnosis-description, .sipnosis-title{
+        width: 100%;
+    }
+
+    #more {
+        display: inline;
+    }
 }

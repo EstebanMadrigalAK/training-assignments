@@ -54,10 +54,23 @@
     }
 
     .characters-item {
-        display: flex;
-        position: relative;
-    
         width: 145px;
         height: 184px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    .characters-container{
+        height: 280px;
+    }
+
+    .characters-item {
+        width: 220px;
+        height: 279px;
+    }
+
+    .text-item{
+        top: 211px;
     }
 }

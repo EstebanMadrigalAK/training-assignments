@@ -166,8 +166,21 @@
   margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For tablet: */
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .sipnosis-section {
+    width: 30%;
+    padding: 32px 16px;
+  }
+  .expand-section, .line {
+    display: none;
+  }
+  .sipnosis-description, .sipnosis-title {
+    width: 100%;
+  }
+  #more {
+    display: inline;
+  }
 }
 .content {
   display: flex;
@@ -265,6 +278,37 @@
   #main-column {
     position: relative;
     top: -57px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .content {
+    padding: 0 14% 0 14%;
+  }
+  .image-header {
+    height: 444px;
+    width: 70%;
+    height: 628px;
+    left: 0%;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .header-section {
+    display: flex;
+    height: 628px;
+  }
+  #main-column {
+    position: relative;
+    top: 0px;
+  }
+  .section-title {
+    height: 36px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #171717;
+    letter-spacing: default;
   }
 }
 /**
@@ -374,10 +418,21 @@
     height: 184px;
   }
   .characters-item {
-    display: flex;
-    position: relative;
     width: 145px;
     height: 184px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .characters-container {
+    height: 280px;
+  }
+  .characters-item {
+    width: 220px;
+    height: 279px;
+  }
+  .text-item {
+    top: 211px;
   }
 }
 /**

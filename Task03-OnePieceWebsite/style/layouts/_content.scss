@@ -93,3 +93,32 @@
         top: -57px;
     }
 }
+
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    .content{
+        padding: 0 14% 0 14%;
+    }
+    .image-header{
+        height: 444px;
+        width: 70%;
+        height: 628px;
+        left: 0%;
+        border-radius: 16px 0px 0px 16px;
+    }
+
+    .header-section{
+        display: flex;
+        height: 628px;
+    }
+
+    #main-column{
+        position: relative;
+        top: 0px;
+    }
+    
+    .section-title{
+        height: 36px;
+        @include text-properties ('Roboto Slab',400,28px,36px,#171717);
+    }
+}
