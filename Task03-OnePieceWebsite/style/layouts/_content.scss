@@ -66,6 +66,7 @@
     display: none;
 }
 
+
 @media only screen and (min-width: 768px) {
     /* For tablet: */
     .content{
@@ -85,5 +86,10 @@
 
     #flex-scroll {
         gap: 20px;
+    }
+
+    #main-column{
+        position: relative;
+        top: -57px;
     }
 }

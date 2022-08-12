@@ -168,10 +168,6 @@
 
 @media only screen and (min-width: 768px) {
   /* For tablet: */
-  .sipnosis-section {
-    position: relative;
-    top: -57px;
-  }
 }
 .content {
   display: flex;
@@ -266,6 +262,10 @@
   #flex-scroll {
     gap: 20px;
   }
+  #main-column {
+    position: relative;
+    top: -57px;
+  }
 }
 /**
  * All Rights Reserved
@@ -309,6 +309,7 @@
     flex-direction: row;
     gap: 38px;
     width: 100%;
+    margin-top: 0px;
   }
 }
 /**
