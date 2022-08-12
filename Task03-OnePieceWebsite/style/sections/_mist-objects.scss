@@ -26,7 +26,7 @@
 }
 
 .mist-object-img{
-    width: 174.49px;
+    width: 174px;
     height: 132px;
 }
 
@@ -42,7 +42,7 @@
 
     left: 117.33px;
 
-    width: 240.67px;
+    width: 240px;
     height: 132px;
 
     background: rgba(0, 96, 150, 0.59);
@@ -58,4 +58,36 @@
 .mist-object-caption-description{
     @include text-properties ('Roboto',400,14px,16px,#F4F4F4);
     margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .mist-object-container{
+        height: 370px;
+        gap: 20px;
+    }
+    .mist-object-item{
+        width: 310px;
+        height: 175px;
+        overflow: visible;
+    }
+    .mist-object-img{
+        width: 181px;
+        height: 175px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .mist-object-text{
+        width: 200px;
+        height: 175px;
+        left: 110px;
+    }
+    .mist-object-caption-title{
+        @include text-properties ('Roboto Slab',700,16px,20px,white,0.1px);
+        margin: 7px;
+    }
+    .mist-object-caption-description{
+        @include text-properties ('Roboto',400,14px,16px,#F4F4F4,0.4px);
+        margin: 7px;
+    }
 }

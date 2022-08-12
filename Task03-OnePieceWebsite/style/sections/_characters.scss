@@ -50,27 +50,14 @@
 @media only screen and (min-width: 768px) {
     /* For tablet: */
     .characters-container{
-        // @include items-container (184px);
-        display: flex;
-        overflow: auto;
-
         height: 184px;
-    }
-
-    .text-item{
-        @include text-properties ('Roboto Slab',700,16px,20px,white,0.01px);
-        width: 145px;
-        top: 140px;
     }
 
     .characters-item {
         display: flex;
         position: relative;
     
-        width: 25%;
-    }
-
-    .filter-item{
         width: 145px;
+        height: 184px;
     }
 }

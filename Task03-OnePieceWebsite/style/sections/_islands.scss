@@ -56,18 +56,25 @@
 @media only screen and (min-width: 768px) {
     /* For tablet: */
     .islands-container{
-        @include items-container (193px);
+        height: 199px;
     }
 
     .text-item{
-        @include text-properties ('Roboto Slab',700,16px,20px,white,0.01px);
         top: 140px;
+    }
+    
+    .island-caption-title{
+        @include text-properties ('Roboto Slab',700,16px,20px,white,0.01px);
+    }
+    .island-caption-location{
+        @include text-properties ('Roboto',400,16px,20px,#F4F4F4,0.25px);
     }
 
     .island-item {
         display: flex;
         position: relative;
     
-        width: 33%;
+        width: 200.03px;
+        height: 199px;
     }
 }

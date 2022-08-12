@@ -28,6 +28,16 @@
   height: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .navbar-logo {
+    width: 163px;
+    height: 58px;
+  }
+  .navbar {
+    height: 109px;
+  }
+}
 /**
  * All Rights Reserved
  * This software is property information of AKUREY S.A.
@@ -156,6 +166,13 @@
   margin-bottom: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .sipnosis-section {
+    position: relative;
+    top: -57px;
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -234,23 +251,19 @@
 
 @media only screen and (min-width: 768px) {
   /* For tablet: */
+  .content {
+    padding: 0 8% 0 8%;
+  }
   .image-header {
     height: 444px;
-    position: absolute;
-    z-index: -2;
+    left: -10%;
+    width: 119.5%;
+    overflow: hidden;
   }
   .crew-filter {
     display: none;
   }
-  .margin-container {
-    width: 90%;
-  }
-  .block {
-    display: inline-block;
-    height: 337px;
-  }
   #flex-scroll {
-    margin: 0;
     gap: 20px;
   }
 }
@@ -290,6 +303,14 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .custom-footer {
+    flex-direction: row;
+    gap: 38px;
+    width: 100%;
+  }
+}
 /**
  * All Rights Reserved
  * This software is property information of AKUREY S.A.
@@ -349,28 +370,13 @@
 @media only screen and (min-width: 768px) {
   /* For tablet: */
   .characters-container {
-    display: flex;
-    overflow: auto;
     height: 184px;
-  }
-  .text-item {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: white;
-    letter-spacing: 0.01px;
-    width: 145px;
-    top: 140px;
   }
   .characters-item {
     display: flex;
     position: relative;
-    width: 25%;
-  }
-  .filter-item {
     width: 145px;
+    height: 184px;
   }
 }
 /**
@@ -444,12 +450,12 @@
 @media only screen and (min-width: 768px) {
   /* For tablet: */
   .islands-container {
-    display: flex;
-    overflow: auto;
-    width: 100%;
-    height: 193px;
+    height: 199px;
   }
   .text-item {
+    top: 140px;
+  }
+  .island-caption-title {
     font-family: "Roboto Slab";
     font-style: normal;
     font-weight: 700;
@@ -457,12 +463,21 @@
     line-height: 20px;
     color: white;
     letter-spacing: 0.01px;
-    top: 140px;
+  }
+  .island-caption-location {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F4F4F4;
+    letter-spacing: 0.25px;
   }
   .island-item {
     display: flex;
     position: relative;
-    width: 33%;
+    width: 200.03px;
+    height: 199px;
   }
 }
 /**
@@ -497,7 +512,7 @@
 }
 
 .mist-object-img {
-  width: 174.49px;
+  width: 174px;
   height: 132px;
 }
 
@@ -511,7 +526,7 @@
   display: flex;
   flex-direction: column;
   left: 117.33px;
-  width: 240.67px;
+  width: 240px;
   height: 132px;
   background: rgba(0, 96, 150, 0.59);
   backdrop-filter: blur(4px);
@@ -540,6 +555,49 @@
   margin: 5px;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .mist-object-container {
+    height: 370px;
+    gap: 20px;
+  }
+  .mist-object-item {
+    width: 310px;
+    height: 175px;
+    overflow: visible;
+  }
+  .mist-object-img {
+    width: 181px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .mist-object-text {
+    width: 200px;
+    height: 175px;
+    left: 110px;
+  }
+  .mist-object-caption-title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    letter-spacing: 0.1px;
+    margin: 7px;
+  }
+  .mist-object-caption-description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F4F4F4;
+    letter-spacing: 0.4px;
+    margin: 7px;
+  }
+}
 button {
   background-color: transparent;
   border: none;

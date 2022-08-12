@@ -30,3 +30,14 @@
 .third-item{
     @extend %navbar-icon-size;
 }
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .navbar-logo{
+        width: 163px;
+        height: 58px;
+    }
+    .navbar{
+        height: 109px;
+    }
+}

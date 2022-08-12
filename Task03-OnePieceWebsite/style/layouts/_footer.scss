@@ -27,3 +27,12 @@
 
    text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+   /* For tablet: */
+   .custom-footer{
+      flex-direction: row;
+      gap: 38px;
+      width: 100%;
+   }
+}
