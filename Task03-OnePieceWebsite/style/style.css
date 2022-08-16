@@ -10,12 +10,12 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
-.third-item, .menu-button {
+.navbar-item {
   width: 15%;
   height: 16px;
 }
 
-.navbar {
+navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,9 +42,8 @@
  */
 .searchbar-container {
   display: flex;
-  overflow: visible;
-  width: 100%;
   height: 56px;
+  margin: 16px 16px 0;
   box-sizing: border-box;
   align-items: center;
   padding: 16px 0px 16px 8px;
@@ -55,8 +54,6 @@
 .searchbar {
   border: none;
   width: 90%;
-  height: 20px;
-  justify-self: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -72,42 +69,14 @@
   width: 10%;
 }
 
-.see-all-btn {
-  width: 49px;
-  height: 20px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #0C75AF;
-  letter-spacing: 0.25px;
-}
-
-#more {
-  display: none;
-}
-
-#read-more-icon {
-  color: #0C75AF;
-  width: 24px;
-  height: 24px;
-}
-
-.read-all-label {
-  width: 85px;
-  height: 24px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #0C75AF;
-  letter-spacing: 0.25px;
-}
-
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
 .sipnosis-title {
-  width: 95%;
+  width: 100%;
   height: 28px;
   font-family: "Roboto Slab";
   font-style: normal;
@@ -119,7 +88,6 @@
 }
 
 .sipnosis-description {
-  width: 95%;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -129,31 +97,47 @@
   letter-spacing: default;
 }
 
+.expand-section {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+#extra-sipnosis-description {
+  display: none;
+}
+
+#read-more-icon {
+  color: #0C75AF;
+}
+
+.read-all-label {
+  width: 100px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0C75AF;
+  letter-spacing: 0.25px;
+}
+
 .line {
-  width: 90%;
   border: 0.5px solid #0C75AF;
 }
 
-.sipnosis-section {
+.sipnosis-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  row-gap: 16px;
-  padding-top: 8px;
+  gap: 16px;
+  margin: 16px;
+  padding: 8px;
   background-color: white;
   box-shadow: 0px 0px 8px #B8E1FF;
   border-radius: 6px;
-}
-
-.expand-section {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 16px;
-  width: 125px;
-  height: 24px;
-  margin-bottom: 10px;
 }
 
 .content {
@@ -166,12 +150,11 @@
   box-sizing: border-box;
 }
 
-.image-header {
+.crew-image-container {
   position: relative;
   display: flex;
-  width: 108.6%;
-  left: -4.3%;
   height: 260px;
+  width: 100%;
 }
 
 .crew-filter {
@@ -179,16 +162,11 @@
   width: 100%;
   height: 163px;
   background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91%);
-  z-index: 10;
   bottom: -1px;
 }
 
 .crew-image {
-  position: absolute;
-  object-position: center;
-  height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 .logo-header {
@@ -204,13 +182,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  padding: 0 16px 0;
+  box-sizing: border-box;
 }
 
 .section-title {
-  height: 24px;
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 700;
@@ -220,16 +197,31 @@
   letter-spacing: 0.1px;
 }
 
+.see-all-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0C75AF;
+  letter-spacing: 0.25px;
+}
+
 #flex-scroll {
   display: flex;
   overflow: auto;
-  width: 100%;
-  height: 100%;
   gap: 15px;
+  margin-left: 16px;
 }
 
 .block {
   display: none;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -267,9 +259,9 @@
   width: 100%;
   row-gap: 38px;
   justify-content: center;
-  margin-top: 80px;
   height: 271px;
   background: #0C75AF;
+  margin-top: 70px;
 }
 
 .footer-image {
@@ -300,17 +292,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   row-gap: 32px;
-  justify-content: space-between;
 }
 
 .characters-container {
   display: flex;
-  width: 104%;
-  height: 231px;
   position: relative;
-  left: 2.2%;
+  width: 100%;
+  height: 231px;
 }
 
 .characters-item {
@@ -332,7 +321,6 @@
   text-align: center;
   width: 100%;
   top: 175px;
-  z-index: 14;
 }
 
 .filter-item {
@@ -343,7 +331,6 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
   mix-blend-mode: multiply;
   border-radius: 19px;
-  z-index: 10;
 }
 
 @media only screen and (min-width: 768px) {
@@ -383,22 +370,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   row-gap: 32px;
-  justify-content: space-between;
 }
 
 .islands-container {
   display: flex;
-  width: 104%;
-  height: 193px;
   position: relative;
-  left: 2.2%;
+  width: 100%;
+  height: 193px;
 }
 
 .island-item {
   display: flex;
   position: relative;
+  justify-content: center;
   width: 194px;
   height: 193px;
 }
@@ -407,7 +392,6 @@
   position: absolute;
   width: 178px;
   height: 48px;
-  left: 8px;
   top: 137px;
   background: rgba(0, 96, 150, 0.59);
   backdrop-filter: blur(4px);
@@ -439,6 +423,11 @@
   align-self: center;
   top: 5px;
   left: 13px;
+}
+
+.material-icons.location-icon {
+  color: rgb(255, 255, 255);
+  font-size: small;
 }
 
 @media only screen and (min-width: 768px) {
@@ -475,7 +464,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   row-gap: 32px;
 }
 
@@ -486,6 +474,8 @@
   height: 428px;
   flex-wrap: wrap;
   gap: 16px;
+  padding: 0 16px 0;
+  box-sizing: border-box;
 }
 
 .mist-object-item {
@@ -497,21 +487,16 @@
 }
 
 .mist-object-img {
-  width: 174.49px;
+  width: 175px;
   height: 132px;
-}
-
-.material-icons.location-icon {
-  color: rgb(255, 255, 255);
-  font-size: small;
 }
 
 .mist-object-text {
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 117.33px;
-  width: 240.67px;
+  left: 117px;
+  width: 241px;
   height: 132px;
   background: rgba(0, 96, 150, 0.59);
   backdrop-filter: blur(4px);

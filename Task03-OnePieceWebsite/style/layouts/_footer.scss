@@ -5,25 +5,25 @@
  * @summary short description for the file
  */
 
-.custom-footer{
+.custom-footer {
    @include flex-column-centered (38px);
    justify-content: center;
-   
-   margin-top: 80px;
+
    height: 271px;
    background: #0C75AF;
+   margin-top: 70px;
 }
 
-.footer-image{
+.footer-image {
    width: 97px;
    height: 89px;
 }
 
-.footer-text{
+.footer-text {
    width: 286px;
    height: 48px;
 
-   @include text-properties ('Roboto',400,14px,16px,white,0.4px);
+   @include text-properties ('Roboto', 400, 14px, 16px, white, 0.4px);
 
    text-align: center;
 }

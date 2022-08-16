@@ -1,61 +1,57 @@
-.see-all-btn{
-    width: 49px;
-    height: 20px;
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
 
-    @include text-properties ('Roboto',400,16px,20px,#0C75AF,0.25px);
+.sipnosis-title{
+    width: 100%;
+    height: 28px;
+    @include text-properties ('Roboto Slab',700,22px,28px);
 }
 
-#more {
+.sipnosis-description{
+    @include text-properties ('Roboto',400,16px,20px,0.25px);
+}
+
+.expand-section{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+    width: 100%;
+    height: 24px;
+
+    margin-bottom: 10px;
+}
+
+#extra-sipnosis-description {
     display: none;
 }
 
 #read-more-icon{
     color: #0C75AF;
-    width: 24px;
-    height: 24px;
 }
 
 .read-all-label{
-    width: 85px;
-    height: 24px;
-
+    width: 100px;
     @include text-properties ('Roboto',400,18px,24px,#0C75AF,0.25px);
 }
 
-.sipnosis-title{
-    width: 95%;
-    height: 28px;
-
-    @include text-properties ('Roboto Slab',700,22px,28px);
-}
-
-.sipnosis-description{
-    width: 95%;
-
-    @include text-properties ('Roboto',400,16px,20px,0.25px);
-}
-
 .line{
-    width: 90%;
     border: 0.5px solid #0C75AF;
 }
 
-.sipnosis-section{
-    @include flex-column-centered (16px);
-    padding-top: 8px;
+.sipnosis-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 16px;
+    padding: 8px;
+
     background-color: white;
     box-shadow: 0px 0px 8px #B8E1FF;
     border-radius: 6px;
-}
-
-.expand-section{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 16px;
-
-    width: 125px;
-    height: 24px;
-
-    margin-bottom: 10px;
 }

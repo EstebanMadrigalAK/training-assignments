@@ -10,7 +10,7 @@
     height: 16px;
 }
 
-.navbar{
+navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,15 +18,11 @@
     height: 78px;
 }
 
-.menu-button{
+.navbar-item{
     @extend %navbar-icon-size;
 }
 
 .navbar-logo{
     width: 112px;
     height: 40px;
-}
-
-.third-item{
-    @extend %navbar-icon-size;
 }

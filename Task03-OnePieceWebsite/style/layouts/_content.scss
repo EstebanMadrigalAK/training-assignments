@@ -13,12 +13,11 @@
     box-sizing: border-box;
 }
 
-.image-header{
+.crew-image-container{
     position: relative;
     display: flex;
-    width: 108.6%;
-    left: -4.3%;
     height: 260px;
+    width: 100%;
 }
 
 .crew-filter{
@@ -26,14 +25,11 @@
     width: 100%;
     height: 163px;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91%);
-    z-index: 10;
     bottom: -1px;
 }
 
 .crew-image{
-    position: absolute;
-    object-position: center;
-    @include fit-parent;
+    width: 100%;
 }
 
 .logo-header{
@@ -49,21 +45,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include fit-parent;
+    width: 100%;
+    padding: 0 16px 0;
+    box-sizing: border-box;
 }
 
 .section-title{
-    height: 24px;
     @include text-properties ('Roboto Slab',700,18px,24px,#171717,0.1px);
 }
 
-#flex-scroll { 
-    @include items-container (100%);
+.see-all-btn{
+    @include text-properties ('Roboto',400,16px,20px,#0C75AF,0.25px);
+}
+
+#flex-scroll {
+    display: flex;
+    overflow: auto;
+    
     gap: 15px;
+    margin-left: 16px;
 }
 
 .block{
     display: none;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 @media only screen and (min-width: 768px) {

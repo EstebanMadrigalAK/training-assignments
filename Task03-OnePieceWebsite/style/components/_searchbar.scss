@@ -5,8 +5,10 @@
  * @summary short description for the file
  */
 
-.searchbar-container{
-    @include items-container (56px,visible);
+ .searchbar-container{
+    display: flex;
+    height: 56px;
+    margin: 16px 16px 0;
 
     box-sizing: border-box;
     align-items: center;
@@ -18,12 +20,7 @@
 
 .searchbar{
     border: none;
-
     width: 90%;
-    height: 20px;
-
-    justify-self: center;
-
     @include text-properties ('Roboto',400,16px,20px,#7D7D7D,0.25px);
 }
 
