@@ -62,11 +62,6 @@
 
 @media only screen and (min-width: 768px) {
     /* For tablet: */
-    .text-item{
-        @include text-properties ('Roboto Slab',700,16px,20px,white,0.01px);
-        top: 140px;
-    }
-
     .island-item {
         width: 200px;
         height: 200px;
@@ -74,5 +69,31 @@
 
     .islands-container{
         height: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .island-item {
+        width: 300px;
+        height: 298px;
+    }
+
+    .islands-container{
+        height: 299px;
+    }
+
+    .island-caption-container{
+        width: 275px;
+        height: 74px;
+        top: 212px;
+    }
+
+    .island-caption-title{
+        @include text-properties ('Roboto Slab',700,18px,24px,white,0.1px);
+    }
+    
+    .island-caption-location{
+        @include text-properties ('Roboto',400,18px,24px,#F4F4F4,0.15px);
     }
 }

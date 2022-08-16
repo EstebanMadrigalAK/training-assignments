@@ -28,6 +28,36 @@
   height: 40px;
 }
 
+.navbar-menu {
+  display: none;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.navbar-option {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #575757;
+  letter-spacing: 0.1px;
+}
+
+.lang-option {
+  width: 90px;
+  height: 31px;
+}
+
+.lang-option:hover {
+  background: #ECECEC;
+}
+
+.lang-option-container {
+  display: flex;
+  gap: 20px;
+}
+
 @media only screen and (min-width: 768px) {
   /* For tablet: */
   .navbar {
@@ -36,6 +66,20 @@
   .navbar-logo {
     width: 163px;
     height: 58px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .navbar {
+    height: 100px;
+    padding: 0 170px 0;
+    box-sizing: border-box;
+  }
+  .navbar-item {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
   }
 }
 /**
@@ -164,13 +208,20 @@
     top: -57px;
   }
 }
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .sipnosis-container {
+    margin: 0;
+    top: 0px;
+    width: 30%;
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   row-gap: 50px;
-  padding: 0 4% 0 4%;
   box-sizing: border-box;
 }
 
@@ -191,6 +242,8 @@
 
 .crew-image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .logo-header {
@@ -266,6 +319,31 @@
   }
   .bottom {
     margin: 0 64px 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .top {
+    display: flex;
+    margin: 0 170px 0;
+    height: 628px;
+  }
+  .crew-image-container {
+    width: 70%;
+    height: 100%;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .bottom {
+    margin: 48px 170px 0;
+  }
+  .section-title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #171717;
+    letter-spacing: default;
   }
 }
 /**
@@ -371,6 +449,36 @@
   .characters-container {
     height: 184px;
   }
+  .text-item {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    letter-spacing: 0.01px;
+    top: 140px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .characters-item {
+    width: 220px;
+    height: 279px;
+  }
+  .characters-container {
+    height: 280px;
+  }
+  .text-item {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: white;
+    letter-spacing: default;
+    top: 213px;
+  }
 }
 /**
  * All Rights Reserved
@@ -444,22 +552,45 @@
 
 @media only screen and (min-width: 768px) {
   /* For tablet: */
-  .text-item {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: white;
-    letter-spacing: 0.01px;
-    top: 140px;
-  }
   .island-item {
     width: 200px;
     height: 200px;
   }
   .islands-container {
     height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .island-item {
+    width: 300px;
+    height: 298px;
+  }
+  .islands-container {
+    height: 299px;
+  }
+  .island-caption-container {
+    width: 275px;
+    height: 74px;
+    top: 212px;
+  }
+  .island-caption-title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    letter-spacing: 0.1px;
+  }
+  .island-caption-location {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F4F4F4;
+    letter-spacing: 0.15px;
   }
 }
 /**
@@ -553,6 +684,46 @@
     left: 110px;
     width: 200px;
     height: 175px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .mist-object-container {
+    height: 100%;
+  }
+  .mist-object-item {
+    width: 461px;
+    height: 254px;
+  }
+  .mist-object-img {
+    width: 263px;
+    height: 254px;
+    object-fit: cover;
+  }
+  .mist-object-text {
+    left: 164px;
+    width: 297px;
+    height: 254px;
+  }
+  .mist-object-caption-title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    letter-spacing: 0.1px;
+    margin: 5px;
+  }
+  .mist-object-caption-description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F4F4F4;
+    letter-spacing: 0.15px;
+    margin: 5px;
   }
 }
 button {

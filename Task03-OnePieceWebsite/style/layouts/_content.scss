@@ -9,7 +9,6 @@
 
 .content{
     @include flex-column-centered (50px);
-    padding: 0 4% 0 4%;
     box-sizing: border-box;
 }
 
@@ -30,6 +29,8 @@
 
 .crew-image{
     width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
 
 .logo-header{
@@ -95,5 +96,28 @@
     }
     .bottom{
         margin: 0 64px 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    .top{
+        display: flex;
+        margin: 0 170px 0;
+        height: 628px;
+    }
+
+    .crew-image-container{
+        width: 70%;
+        height: 100%;
+        border-radius: 16px 0px 0px 16px;
+    }
+
+    .bottom{
+        margin: 48px 170px 0;
+    }
+
+    .section-title{
+        @include text-properties ('Roboto Slab',400,28px,36px,#171717);
     }
 }

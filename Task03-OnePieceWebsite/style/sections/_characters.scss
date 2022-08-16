@@ -57,4 +57,25 @@
     .characters-container {
         height: 184px;
     }
+    .text-item{
+        @include text-properties ('Roboto Slab',700,16px,20px,white,0.01px);
+        top: 140px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    .characters-item {
+        width: 220px;
+        height: 279px;
+    }
+
+    .characters-container {
+        height: 280px;
+    }
+
+    .text-item{
+        @include text-properties ('Roboto Slab',700,22px,28px,white);
+        top: 213px;
+    }
 }
