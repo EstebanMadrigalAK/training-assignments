@@ -78,27 +78,22 @@
 
 @media only screen and (min-width: 768px) {
     /* For tablet: */
-    .image-header{
+    .crew-image-container{
         height: 444px;
-        position: absolute;
-        z-index: -2;
     }
 
     .crew-filter{
         display: none;
     }
-
-    .margin-container{
-        width: 90%;
-    }
-
-    .block{
-        display: inline-block;
-        height: 337px;
-    }
-
     #flex-scroll {
-        margin: 0;
-        gap: 20px;
+        margin-left: 0px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .section-header{
+        padding: 0px;
+    }
+    .bottom{
+        margin: 0 64px 0;
     }
 }

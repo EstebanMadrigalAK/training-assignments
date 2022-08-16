@@ -10,7 +10,7 @@
     height: 16px;
 }
 
-navbar{
+.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,4 +25,15 @@ navbar{
 .navbar-logo{
     width: 112px;
     height: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .navbar{
+        height: 109px;
+    }
+    .navbar-logo{
+        width: 163px;
+        height: 58px;
+    }
 }

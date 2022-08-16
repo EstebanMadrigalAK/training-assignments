@@ -33,6 +33,7 @@
 .mist-object-img{
     width: 175px;
     height: 132px;
+    border-radius: 8px;
 }
 
 .mist-object-text{
@@ -58,4 +59,30 @@
 .mist-object-caption-description{
     @include text-properties ('Roboto',400,14px,16px,#F4F4F4);
     margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .mist-object-container{
+        padding: 0;
+        height: 370px;
+    }
+
+    .mist-object-item{
+        width: 310px;
+        height: 175px;
+    }
+
+    .mist-object-img{
+        width: 181px;
+        height: 175px;
+
+        object-fit: cover;
+    }
+
+    .mist-object-text{
+        left: 110px;
+        width: 200px;
+        height: 175px;
+    }
 }

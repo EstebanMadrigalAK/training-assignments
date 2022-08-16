@@ -62,19 +62,17 @@
 
 @media only screen and (min-width: 768px) {
     /* For tablet: */
-    .islands-container{
-        @include items-container (193px);
-    }
-
     .text-item{
         @include text-properties ('Roboto Slab',700,16px,20px,white,0.01px);
         top: 140px;
     }
 
     .island-item {
-        display: flex;
-        position: relative;
-    
-        width: 33%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .islands-container{
+        height: 200px;
     }
 }
