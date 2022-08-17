@@ -59,6 +59,10 @@
   letter-spacing: 0.1px;
 }
 
+#close-icon {
+  display: none;
+}
+
 .lang-option {
   display: flex;
   align-items: center;
