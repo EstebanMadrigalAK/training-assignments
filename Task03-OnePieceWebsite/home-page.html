@@ -37,30 +37,43 @@
             logo.style.display = "none";
         }
     }
+    function showMenu() {
+        let logo = document.getElementsByClassName("navbar-menu")[0];
+        if (logo.style.display === "none") {
+            logo.style.display = "flex";
+        } else {
+            logo.style.display = "none";
+        }
+    }
 </script>
 
 <body>
     <div class="navbar">
-        <button class="navbar-item">
-            <img class="menu-icon" src="./svg/menu.png" alt="menu">
-        </button>
-        <img class="navbar-logo" src="./svg/One-Piece-Logo 1.png" alt="One-Piece-Logo">
-        <div class="navbar-menu">
+        <section class="bar">
+            <button class="navbar-item" onclick="showMenu()">
+                <img class="menu-icon" src="./svg/menu.png" alt="menu">
+            </button>
+            <img class="navbar-logo" src="./svg/One-Piece-Logo 1.png" alt="One-Piece-Logo">
+            <div class="navbar-item"></div>
+        </section>
+        <section class="navbar-menu">
             <div class="navbar-option">Home</div>
             <div class="navbar-option">Characters</div>
             <div class="navbar-option">Islands</div>
             <div class="navbar-option">Mist Objects</div>
             <div class="lang-option-container">
                 <button class="lang-option">
+                    <small class="navbar-option">English</small>
                     <img src="./svg/usd.svg" alt="usd">
                 </button>
                 <button class="lang-option">
+                    <small class="navbar-option">Spanish</small>
                     <img src="./svg/spn.svg" alt="spn">
                 </button>
             </div>
-        </div>
-        <div class="navbar-item"></div>
+        </section>
     </div>
+
     <main>
         <section>
             <section class="top">

@@ -30,6 +30,8 @@
 
 .island-caption-container{
     position: absolute;
+    display: flex;
+    align-content: center;
     width: 178px;
     height: 48px;
 
@@ -49,10 +51,9 @@
 }
 
 .island-text{
-    position: absolute;
+    position: relative;
     align-self: center;
-    top: 5px;
-    left: 13px;
+    left: 15px;
 }
 
 .material-icons.location-icon { 
@@ -95,5 +96,9 @@
     
     .island-caption-location{
         @include text-properties ('Roboto',400,18px,24px,#F4F4F4,0.15px);
+    }
+
+    .island-text{
+        left: 23px;
     }
 }

@@ -10,12 +10,18 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
-.navbar-item {
+.navbar-item2, .navbar-item {
   width: 15%;
   height: 16px;
 }
 
 .navbar {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,8 +36,17 @@
 
 .navbar-menu {
   display: none;
-  gap: 48px;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  position: absolute;
+  width: 100%;
+  height: 406px;
+  top: 78px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 3px #F3F3F3;
+  z-index: 20;
 }
 
 .navbar-option {
@@ -45,7 +60,11 @@
 }
 
 .lang-option {
-  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
   height: 31px;
 }
 
@@ -56,6 +75,10 @@
 .lang-option-container {
   display: flex;
   gap: 20px;
+  padding: 0 16px 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -215,6 +238,12 @@
     top: 0px;
     width: 30%;
   }
+  .line, .expand-section {
+    display: none;
+  }
+  #extra-sipnosis-description {
+    display: inline;
+  }
 }
 .content {
   display: flex;
@@ -289,10 +318,6 @@
   overflow: auto;
   gap: 15px;
   margin-left: 16px;
-}
-
-.block {
-  display: none;
 }
 
 .bottom {
@@ -510,6 +535,8 @@
 
 .island-caption-container {
   position: absolute;
+  display: flex;
+  align-content: center;
   width: 178px;
   height: 48px;
   top: 137px;
@@ -539,10 +566,9 @@
 }
 
 .island-text {
-  position: absolute;
+  position: relative;
   align-self: center;
-  top: 5px;
-  left: 13px;
+  left: 15px;
 }
 
 .material-icons.location-icon {
@@ -591,6 +617,9 @@
     line-height: 24px;
     color: #F4F4F4;
     letter-spacing: 0.15px;
+  }
+  .island-text {
+    left: 23px;
   }
 }
 /**
