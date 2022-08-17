@@ -1,0 +1,217 @@
+<!-- 
+    All Rights Reserved
+    This software is property information of AKUREY S.A.
+    Contact us at contact@akurey.com
+    @summary short description for the file
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="./style/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<script src="home-page.js"></script>
+<body>
+    <div class="navbar">
+        <section class="bar">
+            <button class="navbar-item" onclick="showMenu()">
+                <img id="menu-icon" src="./svg/menu.png" alt="Navbar menu icon">
+                <span class="material-icons" id="close-icon">close</span>
+            </button>
+            <img class="navbar-logo" src="./svg/One-Piece-Logo 1.png" alt="Navbar One-Piece logo">
+            <div class="navbar-item"></div>
+        </section>
+        <section class="navbar-menu">
+            <a class="navbar-option" href="/">Home</a>
+            <a class="navbar-option" href="/characters">Characters</a>
+            <a class="navbar-option" href="/islands">Islands</a>
+            <a class="navbar-option" href="/mist-objects">Mist Objects</a>
+            <div class="lang-option-container">
+                <button class="lang-option">
+                    <small class="navbar-option" id="lang-text">English</small>
+                    <img src="./svg/usd.svg" alt="United States flag icon">
+                </button>
+                <button class="lang-option">
+                    <small class="navbar-option" id="lang-text">Spanish</small>
+                    <img src="./svg/spn.svg" alt="Spain flag icon">
+                </button>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section>
+            <section class="top">
+                <div class="crew-image-container">
+                    <div class="crew-filter"></div>
+                    <img class="crew-image" src="./svg/crew.svg" alt="Top One-Piece crew image">
+                </div>
+                <img class="logo-header" src="./svg/One-Piece-Logo 1.png" alt="Sipnosis One-Piece logo">
+                <div class="sipnosis-container">
+                    <b class="sipnosis-title">Sipnosis</b>
+                    <small class="sipnosis-description">
+                        Dawn Island is an island located in the East Blue and where the Goa Kingdom is situated.<br><br>
+                        It is the home island of Monkey D. Luffy and the starting point of his journey into piracy, as
+                        well as
+                        the home island of his father, Monkey D. Dragon.
+                        <span id="extra-sipnosis-description">
+                            <br><br>
+                            This is also the adopted home of Portgas D. Ace after the death of his mother and the home
+                            of Sabo
+                            and his family.<br><br>
+                            Reverse Mountain is an extremely tall mountain at one of the points where the four Blues
+                            meet and is
+                            one of the two known entrances to the Grand Line.<br><br>
+                            It is located in the Red Line and is the geographical antipode of Mary Geoise.
+                        </span>
+                    </small>
+                    <div class="line"></div>
+                    <div class="expand-section" onclick="showSipnosis()">
+                        <span class="material-icons" id="read-more-icon">expand_more</span>
+                        <small class="read-all-label">Read All</small>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="searchbar-container">
+                    <span class="material-icons" id="search-icon">search</span>
+                    <input class="searchbar" placeholder="Search Characters, Islands or Objects">
+                </div>
+                <div class="characters-section">
+                    <div class="section-header">
+                        <b class="section-title">Characters</b>
+                        <a class="see-all-btn" href="/characters">See all</a>
+                    </div>
+                    <div class="characters-container">
+                        <div id="flex-scroll">
+                            <div class="characters-item">
+                                <div class="filter-item"></div>
+                                <img src="./svg/monkeydluffy.svg" alt="Monkey D. Luffy character card">
+                                <b class="text-item">Monkey D. Luffy</b>
+                            </div>
+                            <div class="characters-item">
+                                <div class="filter-item"></div>
+                                <img src="./svg/ace.svg" alt="Portgas D. Ace character card">
+                                <b class="text-item">Portgas D. Ace</b>
+                            </div>
+                            <div class="characters-item">
+                                <div class="filter-item"></div>
+                                <img src="./svg/zoro.svg" alt="Rorona Zoro character card">
+                                <b class="text-item">Roronoa Zoro</b>
+                            </div>
+                            <div class="characters-item">
+                                <div class="filter-item"></div>
+                                <img src="./svg/nico.svg" alt="Nico Robin character card">
+                                <b class="text-item">Nico Robin</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="islands-section">
+                    <div class="section-header">
+                        <b class="section-title">Islands</b>
+                        <a class="see-all-btn" href="/islands">See all</a>
+                    </div>
+                    <div class="islands-container">
+                        <div id="flex-scroll">
+                            <div class="island-item">
+                                <img src="./svg/dawn.svg" alt="Dawn Island card">
+                                <div class="island-caption-container">
+                                    <div class="island-text">
+                                        <label class="island-caption-title">Dawn Island</label><br>
+                                        <span class="material-icons location-icon">fmd_good</span>
+                                        <small class="island-caption-location">East Blue</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="island-item">
+                                <img src="./svg/reverse.svg" alt="Reverse Mountain Island card">
+                                <div class="island-caption-container">
+                                    <div class="island-text">
+                                        <label class="island-caption-title">Reverse Mountain</label><br>
+                                        <span class="material-icons location-icon">fmd_good</span>
+                                        <small class="island-caption-location">Red Line</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="island-item">
+                                <img src="./svg/reverse.svg" alt="Reverse Mountain Island card">
+                                <div class="island-caption-container">
+                                    <div class="island-text">
+                                        <label class="island-caption-title">Reverse Mountain</label><br>
+                                        <span class="material-icons location-icon">fmd_good</span>
+                                        <small class="island-caption-location">Red Line</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mist-object-section">
+                    <div class="section-header">
+                        <b class="section-title">Mist Objects</b>
+                        <a class="see-all-btn" href="/mist-objects">See all</b>
+                    </div>
+                    <div class="mist-object-container">
+                        <div class="mist-object-item">
+                            <img class="mist-object-img" src="./svg/object2.svg" alt="Gomu Gomu No Mi object-mist card">
+                            <div class="mist-object-text">
+                                <label class="mist-object-caption-title">Gomu Gomu No Mi</label>
+                                <small class="mist-object-caption-description">Is a Paramecia-type Devil Fruit that
+                                    gives the
+                                    user's body the properties of rubber, making the user a Rubber Human. It was then
+                                    accidentally eaten by the series protagonist, Monkey D. Luffy.</small>
+                            </div>
+        
+                        </div>
+                        <div class="mist-object-item">
+                            <img class="mist-object-img" src="./svg/object2.svg" alt="Gomu Gomu No Mi object-mist card">
+                            <div class="mist-object-caption-container">
+                                <div class="mist-object-text">
+                                    <label class="mist-object-caption-title">Gomu Gomu No Mi</label>
+                                    <small class="mist-object-caption-description">Is a Paramecia-type Devil Fruit that
+                                        gives the
+                                        user's body the properties of rubber, making the user a Rubber Human. It was
+                                        then
+                                        accidentally eaten by the series protagonist, Monkey D. Luffy.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mist-object-item">
+                            <img class="mist-object-img" src="./svg/object2.svg" alt="Gomu Gomu No Mi object-mist card">
+                            <div class="mist-object-text">
+                                <label class="mist-object-caption-title">Gomu Gomu No Mi</label>
+                                <small class="mist-object-caption-description">Is a Paramecia-type Devil Fruit that
+                                    gives the
+                                    user's body the properties of rubber, making the user a Rubber Human. It was then
+                                    accidentally eaten by the series protagonist, Monkey D. Luffy.</small>
+                            </div>
+                        </div>
+                        <div class="mist-object-item">
+                            <img class="mist-object-img" src="./svg/object2.svg" alt="Gomu Gomu No Mi object-mist card">
+                            <div class="mist-object-text">
+                                <label class="mist-object-caption-title">Gomu Gomu No Mi</label>
+                                <small class="mist-object-caption-description">Is a Paramecia-type Devil Fruit that
+                                    gives the
+                                    user's body the properties of rubber, making the user a Rubber Human. It was then
+                                    accidentally eaten by the series protagonist, Monkey D. Luffy.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="custom-footer">
+        <img class="footer-image" src="./svg/footer-icon.svg" alt="Footer One-Piece logo">
+        <small class="footer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit at vel congue scelerisque tortor tortor.
+        </small>
+    </footer>
+</body>
+</html>

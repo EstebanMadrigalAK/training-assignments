@@ -1,0 +1,119 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+@import '../components/searchbar';
+@import '../sections/sipnosis';
+
+.content {
+    @include flex-column-centered (50px);
+    box-sizing: border-box;
+}
+
+.crew-image-container {
+    @include items-container (260px,visible);
+    position: relative;
+}
+
+.crew-filter {
+    position: absolute;
+    width: 100%;
+    height: 163px;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91%);
+    bottom: -1px;
+}
+
+.crew-image {
+    @include fit-parent;
+}
+
+.logo-header {
+    display: none;
+    width: 163px;
+    height: 58px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 16px 0;
+    box-sizing: border-box;
+}
+
+.section-title {
+    @include text-properties ('Roboto Slab',700,18px,24px,#171717,0.1px);
+}
+
+.see-all-btn {
+    @include text-properties ('Roboto',400,16px,20px,#0C75AF,0.25px);
+    text-decoration: none;
+}
+
+#flex-scroll {
+    display: flex;
+    overflow: auto;
+    
+    gap: 15px;
+    margin-left: 16px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .crew-image-container {
+        height: 444px;
+    }
+
+    .crew-filter {
+        display: none;
+    }
+    #flex-scroll {
+        margin-left: 0px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .section-header {
+        padding: 0px;
+    }
+    .bottom {
+        margin: 0 64px 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    .top {
+        flex-direction: row;
+        margin: 0 170px 0;
+        height: 628px;
+    }
+
+    .crew-image-container {
+        width: 70%;
+        height: 100%;
+        border-radius: 16px 0px 0px 16px;
+    }
+
+    .bottom {
+        margin: 48px 170px 0;
+    }
+
+    .section-title {
+        @include text-properties ('Roboto Slab',400,28px,36px,#171717);
+    }
+}
