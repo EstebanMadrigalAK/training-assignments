@@ -5,11 +5,6 @@
  * @summary short description for the file
  */
 
-%navbar-icon-size{
-    width: 15%;
-    height: 16px;
-}
-
 .navbar{
     display: flex;
     flex-direction: column;
@@ -25,7 +20,8 @@
 }
 
 .navbar-item{
-    @extend %navbar-icon-size;
+    width: 15%;
+    height: 16px;
 }
 
 .navbar-logo{
@@ -52,6 +48,7 @@
 
 .navbar-option{
     @include text-properties ('Roboto Slab',700,18px,24px,#575757,0.1px);
+    text-decoration: none;
 }
 
 #close-icon{
@@ -86,10 +83,12 @@
     .bar{
         height: 109px;
     }
+
     .navbar-logo{
         width: 163px;
         height: 58px;
     }
+
     .navbar-menu{
         top: 109px;
     }
@@ -103,6 +102,7 @@
         align-items: center;
         justify-content: space-between;
     }
+
     .bar{
         height: 100px;
         width: 163px;
@@ -117,6 +117,7 @@
         display: flex;
         position: static;
     }
+
     .navbar-menu{
         display: flex;
         flex-direction: row;
@@ -138,6 +139,7 @@
         height: 31px;
         padding: 0;
     }
+
     .navbar-option{
         @include text-properties ('Roboto Slab',700,18px,24px,#575757,0.1px);
     }

@@ -6,68 +6,32 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-
     <link href="./style/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
-<script>
-    function myFunction() {
-        let moreText = document.getElementById("extra-sipnosis-description");
-        let btnText = document.getElementsByClassName("read-all-label")[0];
-        let icon = document.getElementsByClassName("material-icons")[0];
-        let logo = document.getElementsByClassName("logo-header")[0];
-        if (moreText.style.display === "none") {
-            moreText.style.display = "inline";
-            btnText.innerHTML = "Read Less";
-            icon.innerHTML = "expand_less";
-            logo.style.display = "inline";
-        } else {
-            moreText.style.display = "none";
-            btnText.innerHTML = "Read All";
-            icon.innerHTML = "expand_more";
-            logo.style.display = "none";
-        }
-    }
-    function showMenu() {
-        let logo = document.getElementsByClassName("navbar-menu")[0];
-        let cancel = document.getElementById("close-icon")
-        let menu = document.getElementsByClassName("menu-icon")[0];
-        if (logo.style.display === "none") {
-            logo.style.display = "flex";
-            cancel.style.display = "inline";
-            menu.style.display = "none";
-        } else {
-            logo.style.display = "none";
-            cancel.style.display = "none";
-            menu.style.display = "inline";
-        }
-    }
-</script>
-
+<script src="home-page.js"></script>
 <body>
     <div class="navbar">
         <section class="bar">
             <button class="navbar-item" onclick="showMenu()">
-                <img class="menu-icon" src="./svg/menu.png" alt="menu">
+                <img id="menu-icon" src="./svg/menu.png" alt="menu">
                 <span class="material-icons" id="close-icon">close</span>
             </button>
             <img class="navbar-logo" src="./svg/One-Piece-Logo 1.png" alt="One-Piece-Logo">
             <div class="navbar-item"></div>
         </section>
         <section class="navbar-menu">
-            <div class="navbar-option">Home</div>
-            <div class="navbar-option">Characters</div>
-            <div class="navbar-option">Islands</div>
-            <div class="navbar-option">Mist Objects</div>
+            <a class="navbar-option" href="/">Home</a>
+            <a class="navbar-option" href="/characters">Characters</a>
+            <a class="navbar-option" href="/islands">Islands</a>
+            <a class="navbar-option" href="/mist-objects">Mist Objects</a>
             <div class="lang-option-container">
                 <button class="lang-option">
                     <small class="navbar-option" id="lang-text">English</small>
@@ -80,7 +44,6 @@
             </div>
         </section>
     </div>
-
     <main>
         <section>
             <section class="top">
@@ -107,7 +70,7 @@
                         </span>
                     </small>
                     <div class="line"></div>
-                    <div class="expand-section" onclick="myFunction()">
+                    <div class="expand-section" onclick="showSipnosis()">
                         <span class="material-icons" id="read-more-icon">expand_more</span>
                         <small class="read-all-label">Read All</small>
                     </div>
@@ -246,7 +209,6 @@
             </section>
         </section>
     </main>
-
     <footer class="custom-footer">
         <img class="footer-image" src="./svg/footer-icon.svg" alt="Placeholder">
         <small class="footer-text">
@@ -254,5 +216,4 @@
         </small>
     </footer>
 </body>
-
 </html>

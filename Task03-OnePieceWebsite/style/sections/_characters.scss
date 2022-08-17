@@ -38,11 +38,7 @@
 
 .filter-item {
     position: absolute;
-
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
+    @include fit-parent;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
     mix-blend-mode: multiply;
     border-radius: 19px;
