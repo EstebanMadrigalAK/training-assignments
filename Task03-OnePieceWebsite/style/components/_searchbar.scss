@@ -5,7 +5,7 @@
  * @summary short description for the file
  */
 
-.searchbar-container{
+.searchbar-container {
     display: flex;
     height: 56px;
     margin: 16px 16px 0;
@@ -18,21 +18,21 @@
     border-radius: 6px;
 }
 
-.searchbar{
+.searchbar {
     border: none;
     width: 90%;
     @include text-properties ('Roboto',400,16px,20px,#7D7D7D,0.25px);
 }
 
-#search-icon{
+#search-icon {
     color: #7D7D7D;
     font-size: 30px;
     width: 10%;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     /* For tablet: */
-    .searchbar-container{
+    .searchbar-container {
         margin: 0px;
     }
 }

@@ -5,11 +5,11 @@
  * @summary short description for the file
  */
 
-.mist-object-section{
+.mist-object-section {
     @include flex-column-centered(32px,auto);
 }
 
-.mist-object-container{
+.mist-object-container {
     @include items-container (428px);
     flex-wrap: wrap;
     gap: 16px;
@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-.mist-object-item{
+.mist-object-item {
     display: flex;
     position: relative;
 
@@ -27,13 +27,13 @@
     overflow: auto;
 }
 
-.mist-object-img{
+.mist-object-img {
     width: 175px;
     height: 132px;
     border-radius: 8px;
 }
 
-.mist-object-text{
+.mist-object-text {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -48,70 +48,70 @@
     border-radius: 0px 6px 6px 0px;
 }
 
-.mist-object-caption-title{
+.mist-object-caption-title {
     @include text-properties ('Roboto',700,13px,16px,white);
     margin: 5px;
 }
 
-.mist-object-caption-description{
+.mist-object-caption-description {
     @include text-properties ('Roboto',400,14px,16px,#F4F4F4);
     margin: 5px;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     /* For tablet: */
-    .mist-object-container{
+    .mist-object-container {
         padding: 0;
         height: 370px;
     }
 
-    .mist-object-item{
+    .mist-object-item {
         width: 310px;
         height: 175px;
     }
 
-    .mist-object-img{
+    .mist-object-img {
         width: 181px;
         height: 175px;
 
         object-fit: cover;
     }
 
-    .mist-object-text{
+    .mist-object-text {
         left: 110px;
         width: 200px;
         height: 175px;
     }
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1280px) {
     /* For desktop: */
-    .mist-object-container{
+    .mist-object-container {
         height: 100%;
     }
 
-    .mist-object-item{
+    .mist-object-item {
         width: 461px;
         height: 254px;
     }
 
-    .mist-object-img{
+    .mist-object-img {
         width: 263px;
         height: 254px;
     }
 
-    .mist-object-text{
+    .mist-object-text {
         left: 164px;
         width: 297px;
         height: 254px;
     }
 
-    .mist-object-caption-title{
+    .mist-object-caption-title {
         @include text-properties ('Roboto Slab',700,18px,24px,white,0.1px);
         margin: 5px;
     }
     
-    .mist-object-caption-description{
+    .mist-object-caption-description {
         @include text-properties ('Roboto',400,18px,24px,#F4F4F4,0.15px);
         margin: 5px;
     }

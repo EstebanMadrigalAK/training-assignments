@@ -5,16 +5,16 @@
  * @summary short description for the file
  */
 
-.islands-section{
+.islands-section {
     @include flex-column-centered(32px,auto);
 }
 
-.islands-container{
+.islands-container {
     @include items-container(193px, visible);
     position: relative;
 }
 
-.island-item{
+.island-item {
     display: flex;
     position: relative;
     justify-content: center;
@@ -23,7 +23,7 @@
     height: 193px;
 }
 
-.island-caption-container{
+.island-caption-container {
     position: absolute;
     display: flex;
     align-content: center;
@@ -37,63 +37,63 @@
     border-radius: 6px;
 }
 
-.island-caption-title{
+.island-caption-title {
     @include text-properties ('Roboto',700,13px,16px,white);
 }
 
-.island-caption-location{
+.island-caption-location {
     @include text-properties ('Roboto',400,14px,16px,#F4F4F4,0.4px);
 }
 
-.island-text{
+.island-text {
     position: relative;
     align-self: center;
     left: 15px;
 }
 
-.material-icons.location-icon{ 
+.material-icons.location-icon { 
     color: rgba(255, 255, 255, 1);
     font-size: small;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     /* For tablet: */
-    .island-item{
+    .island-item {
         width: 200px;
         height: 200px;
     }
 
-    .islands-container{
+    .islands-container {
         height: 200px;
     }
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1280px) {
     /* For desktop: */
-    .island-item{
+    .island-item {
         width: 300px;
         height: 298px;
     }
 
-    .islands-container{
+    .islands-container {
         height: 299px;
     }
 
-    .island-caption-container{
+    .island-caption-container {
         width: 275px;
         height: 74px;
         top: 212px;
     }
 
-    .island-caption-title{
+    .island-caption-title {
         @include text-properties ('Roboto Slab',700,18px,24px,white,0.1px);
     }
     
-    .island-caption-location{
+    .island-caption-location {
         @include text-properties ('Roboto',400,18px,24px,#F4F4F4,0.15px);
     }
 
-    .island-text{
+    .island-text {
         left: 23px;
     }
 }

@@ -5,10 +5,10 @@
  * @summary short description for the file
  */
  function showSipnosis() {
-    let moreText = document.getElementById("extra-sipnosis-description");
-    let btnText = document.getElementsByClassName("read-all-label")[0];
-    let icon = document.getElementsByClassName("material-icons")[0];
-    let logo = document.getElementsByClassName("logo-header")[0];
+    const moreText = document.getElementById('extra-sipnosis-description');
+    const btnText = document.querySelector('.read-all-label');
+    const icon = document.querySelector('.material-icons');
+    const logo = document.querySelector('.logo-header');
 
     if (moreText.style.display === "inline") {
         moreText.style.display = "none";
@@ -28,9 +28,9 @@
     }
 }
 function showMenu() {
-    let menu = document.getElementsByClassName("navbar-menu")[0];
-    let cancelIcon = document.getElementById("close-icon")
-    let menuIcon = document.getElementById("menu-icon");
+    const menu = document.querySelector('.navbar-menu');
+    const cancelIcon = document.getElementById('close-icon')
+    const menuIcon = document.getElementById('menu-icon');
     if (menu.style.display == "flex") {
         menu.style.display = "none";
         cancelIcon.style.display = "none";

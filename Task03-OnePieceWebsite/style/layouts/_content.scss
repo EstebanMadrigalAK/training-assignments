@@ -7,17 +7,17 @@
 @import '../components/searchbar';
 @import '../sections/sipnosis';
 
-.content{
+.content {
     @include flex-column-centered (50px);
     box-sizing: border-box;
 }
 
-.crew-image-container{
+.crew-image-container {
     @include items-container (260px,visible);
     position: relative;
 }
 
-.crew-filter{
+.crew-filter {
     position: absolute;
     width: 100%;
     height: 163px;
@@ -25,23 +25,23 @@
     bottom: -1px;
 }
 
-.crew-image{
+.crew-image {
     @include fit-parent;
 }
 
-.logo-header{
+.logo-header {
     display: none;
     width: 163px;
     height: 58px;
 }
 
-.top{
+.top {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.section-header{
+.section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,16 +50,16 @@
     box-sizing: border-box;
 }
 
-.section-title{
+.section-title {
     @include text-properties ('Roboto Slab',700,18px,24px,#171717,0.1px);
 }
 
-.see-all-btn{
+.see-all-btn {
     @include text-properties ('Roboto',400,16px,20px,#0C75AF,0.25px);
     text-decoration: none;
 }
 
-#flex-scroll{
+#flex-scroll {
     display: flex;
     overflow: auto;
     
@@ -67,53 +67,53 @@
     margin-left: 16px;
 }
 
-.bottom{
+.bottom {
     display: flex;
     flex-direction: column;
     gap: 48px;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     /* For tablet: */
-    .crew-image-container{
+    .crew-image-container {
         height: 444px;
     }
 
-    .crew-filter{
+    .crew-filter {
         display: none;
     }
-    #flex-scroll{
+    #flex-scroll {
         margin-left: 0px;
         justify-content: space-between;
         width: 100%;
     }
-    .section-header{
+    .section-header {
         padding: 0px;
     }
-    .bottom{
+    .bottom {
         margin: 0 64px 0;
     }
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1280px) {
     /* For desktop: */
-    .top{
+    .top {
         flex-direction: row;
         margin: 0 170px 0;
         height: 628px;
     }
 
-    .crew-image-container{
+    .crew-image-container {
         width: 70%;
         height: 100%;
         border-radius: 16px 0px 0px 16px;
     }
 
-    .bottom{
+    .bottom {
         margin: 48px 170px 0;
     }
 
-    .section-title{
+    .section-title {
         @include text-properties ('Roboto Slab',400,28px,36px,#171717);
     }
 }

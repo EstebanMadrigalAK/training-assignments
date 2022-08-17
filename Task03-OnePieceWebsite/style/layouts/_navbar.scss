@@ -5,13 +5,13 @@
  * @summary short description for the file
  */
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-.bar{
+.bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,17 +19,17 @@
     height: 78px;
 }
 
-.navbar-item{
+.navbar-item {
     width: 15%;
     height: 16px;
 }
 
-.navbar-logo{
+.navbar-logo {
     width: 112px;
     height: 40px;
 }
 
-.navbar-menu{
+.navbar-menu {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -46,16 +46,16 @@
     z-index: 20;
 }
 
-.navbar-option{
+.navbar-option {
     @include text-properties ('Roboto Slab',700,18px,24px,#575757,0.1px);
     text-decoration: none;
 }
 
-#close-icon{
+#close-icon {
     display: none;
 }
 
-.lang-option{
+.lang-option {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,11 +64,11 @@
     height: 31px;
 }
 
-.lang-option:hover{
+.lang-option:hover {
     background: #ECECEC;
 }
 
-.lang-option-container{
+.lang-option-container {
     display: flex;
     gap: 20px;
     padding: 0 16px 0;
@@ -78,47 +78,47 @@
     height: 30px;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     /* For tablet: */
-    .bar{
+    .bar {
         height: 109px;
     }
 
-    .navbar-logo{
+    .navbar-logo {
         width: 163px;
         height: 58px;
     }
 
-    .navbar-menu{
+    .navbar-menu {
         top: 109px;
     }
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1280px) {
     /* For desktop: */
-    .navbar{
+    .navbar {
         flex-direction: row;
         padding: 0 170px 0;
         align-items: center;
         justify-content: space-between;
     }
 
-    .bar{
+    .bar {
         height: 100px;
         width: 163px;
         box-sizing: border-box;
     }
 
-    .navbar-item{
+    .navbar-item {
         display: none;
     }
 
-    .navbar-menu{
+    .navbar-menu {
         display: flex;
         position: static;
     }
 
-    .navbar-menu{
+    .navbar-menu {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -130,17 +130,17 @@
         box-shadow: none;
     }
 
-    #lang-text{
+    #lang-text {
         display: none;
     }
 
-    .lang-option-container{
+    .lang-option-container {
         width: 200px;
         height: 31px;
         padding: 0;
     }
 
-    .navbar-option{
+    .navbar-option {
         @include text-properties ('Roboto Slab',700,18px,24px,#575757,0.1px);
     }
 }
