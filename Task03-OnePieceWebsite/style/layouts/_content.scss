@@ -56,6 +56,7 @@
 
 .see-all-btn{
     @include text-properties ('Roboto',400,16px,20px,#0C75AF,0.25px);
+    text-decoration: none;
 }
 
 #flex-scroll{
