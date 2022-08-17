@@ -9,6 +9,7 @@
     let btnText = document.getElementsByClassName("read-all-label")[0];
     let icon = document.getElementsByClassName("material-icons")[0];
     let logo = document.getElementsByClassName("logo-header")[0];
+
     if (moreText.style.display === "inline") {
         moreText.style.display = "none";
         btnText.innerHTML = "Read All";
@@ -19,6 +20,11 @@
         btnText.innerHTML = "Read Less";
         icon.innerHTML = "expand_less";
         logo.style.display = "inline";
+    }
+
+    let mediaQuery = window.matchMedia('(min-width: 768px)')
+    if (mediaQuery.matches) {
+        logo.style.display = "none";
     }
 }
 function showMenu() {

@@ -41,15 +41,16 @@
 
 .line{
     border: 0.5px solid #0C75AF;
+    width: 100%;
 }
 
 .sipnosis-container{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    @include flex-column-centered(16px, auto);
 
     margin: 16px;
     padding: 8px;
+
+    box-sizing: border-box;
 
     background-color: white;
     box-shadow: 0px 0px 8px #B8E1FF;
@@ -71,6 +72,8 @@
         margin: 0;
         top: 0px;
         width: 30%;
+        height: 100%;
+        padding: 32px 16px;
     }
 
     .line,.expand-section{
