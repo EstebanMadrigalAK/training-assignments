@@ -28,10 +28,6 @@
     @extend %navbar-icon-size;
 }
 
-.navbar-item2{
-    @extend %navbar-icon-size;
-}
-
 .navbar-logo{
     width: 112px;
     height: 40px;
@@ -81,23 +77,27 @@
     padding: 0 16px 0;
     box-sizing: border-box;
     justify-content: space-between;
-    width: 100%;
+    width: 358px;
+    height: 30px;
 }
 
 @media only screen and (min-width: 768px) {
     /* For tablet: */
-    .navbar{
+    .bar{
         height: 109px;
     }
     .navbar-logo{
         width: 163px;
         height: 58px;
     }
+    .navbar-menu{
+        top: 109px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
     /* For desktop: */
-    .navbar{
+    .bar{
         height: 100px;
         padding: 0 170px 0;
         box-sizing: border-box;
