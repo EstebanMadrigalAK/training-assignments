@@ -299,10 +299,11 @@
 }
 
 .crew-image-container {
-  position: relative;
   display: flex;
-  height: 260px;
+  overflow: visible;
   width: 100%;
+  height: 260px;
+  position: relative;
 }
 
 .crew-filter {
@@ -314,18 +315,18 @@
 }
 
 .crew-image {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 .logo-header {
+  display: none;
   position: absolute;
   top: 300px;
   z-index: 15;
   width: 163px;
   height: 58px;
-  display: none;
 }
 
 .section-header {
@@ -468,14 +469,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
   row-gap: 32px;
 }
 
 .characters-container {
   display: flex;
-  position: relative;
+  overflow: visible;
   width: 100%;
   height: 231px;
+  position: relative;
 }
 
 .characters-item {
@@ -559,14 +562,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
   row-gap: 32px;
 }
 
 .islands-container {
   display: flex;
-  position: relative;
+  overflow: visible;
   width: 100%;
   height: 193px;
+  position: relative;
 }
 
 .island-item {
@@ -630,8 +635,8 @@
     height: 200px;
   }
 }
-@media only screen and (min-width: 768px) {
-  /* For tablet: */
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
   .island-item {
     width: 300px;
     height: 298px;
@@ -676,6 +681,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
   row-gap: 32px;
 }
 
@@ -771,7 +777,6 @@
   .mist-object-img {
     width: 263px;
     height: 254px;
-    object-fit: cover;
   }
   .mist-object-text {
     left: 164px;

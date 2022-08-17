@@ -13,10 +13,8 @@
 }
 
 .crew-image-container{
+    @include items-container (260px,visible);
     position: relative;
-    display: flex;
-    height: 260px;
-    width: 100%;
 }
 
 .crew-filter{
@@ -28,18 +26,16 @@
 }
 
 .crew-image{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
+    @include fit-parent;
 }
 
 .logo-header{
+    display: none;
     position: absolute;
     top: 300px;
     z-index: 15;
     width: 163px;
     height: 58px;
-    display: none;
 }
 
 .section-header{
@@ -59,7 +55,7 @@
     @include text-properties ('Roboto',400,16px,20px,#0C75AF,0.25px);
 }
 
-#flex-scroll {
+#flex-scroll{
     display: flex;
     overflow: auto;
     
@@ -73,7 +69,7 @@
     gap: 48px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
     /* For tablet: */
     .crew-image-container{
         height: 444px;
@@ -82,7 +78,7 @@
     .crew-filter{
         display: none;
     }
-    #flex-scroll {
+    #flex-scroll{
         margin-left: 0px;
         justify-content: space-between;
         width: 100%;
@@ -95,7 +91,7 @@
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px){
     /* For desktop: */
     .top{
         display: flex;

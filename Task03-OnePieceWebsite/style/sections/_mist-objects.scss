@@ -6,10 +6,7 @@
  */
 
 .mist-object-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 32px;
+    @include flex-column-centered(32px,auto);
 }
 
 .mist-object-container{
@@ -61,7 +58,7 @@
     margin: 5px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
     /* For tablet: */
     .mist-object-container{
         padding: 0;
@@ -87,7 +84,7 @@
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px){
     /* For desktop: */
     .mist-object-container{
         height: 100%;
@@ -101,8 +98,6 @@
     .mist-object-img{
         width: 263px;
         height: 254px;
-
-        object-fit: cover;
     }
 
     .mist-object-text{

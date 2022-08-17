@@ -5,7 +5,7 @@
  * @summary short description for the file
  */
 
-@mixin text-properties ($family,$weight,$size,$height,$color:default,$spacing:default) {
+@mixin text-properties ($family,$weight,$size,$height,$color:default,$spacing:default){
     font-family: $family;
     font-style: normal;
     font-weight: $weight;
@@ -15,7 +15,7 @@
     letter-spacing: $spacing;
 }
 
-@mixin flex-column-centered ($row-gap:default, $width:100%) {
+@mixin flex-column-centered ($row-gap:default, $width:100%){
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
     row-gap: $row-gap;
 }
 
-@mixin items-container ($height,$overflow:auto) {
+@mixin items-container ($height,$overflow:auto){
     display: flex;
     overflow: $overflow;
 
@@ -31,7 +31,7 @@
     height: $height;
 }
 
-@mixin fit-parent {
+@mixin fit-parent{
     height: 100%;
     width: 100%;
     object-fit: cover;

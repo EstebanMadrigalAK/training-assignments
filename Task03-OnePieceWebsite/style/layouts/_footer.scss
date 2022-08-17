@@ -5,7 +5,7 @@
  * @summary short description for the file
  */
 
-.custom-footer {
+.custom-footer{
    @include flex-column-centered (38px);
    justify-content: center;
 
@@ -14,12 +14,12 @@
    margin-top: 70px;
 }
 
-.footer-image {
+.footer-image{
    width: 97px;
    height: 89px;
 }
 
-.footer-text {
+.footer-text{
    width: 286px;
    height: 48px;
 
@@ -28,7 +28,7 @@
    text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
    /* For tablet: */
    .custom-footer{
       flex-direction: row;

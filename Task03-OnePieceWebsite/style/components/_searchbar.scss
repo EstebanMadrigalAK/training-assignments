@@ -5,7 +5,7 @@
  * @summary short description for the file
  */
 
- .searchbar-container{
+.searchbar-container{
     display: flex;
     height: 56px;
     margin: 16px 16px 0;
@@ -30,7 +30,7 @@
     width: 10%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
     /* For tablet: */
     .searchbar-container{
         margin: 0px;
