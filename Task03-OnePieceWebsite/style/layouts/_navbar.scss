@@ -97,9 +97,15 @@
 
 @media only screen and (min-width: 1280px) {
     /* For desktop: */
+    .navbar{
+        flex-direction: row;
+        padding: 0 170px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
     .bar{
         height: 100px;
-        padding: 0 170px 0;
+        width: 163px;
         box-sizing: border-box;
     }
 
@@ -109,5 +115,30 @@
 
     .navbar-menu{
         display: flex;
+        position: static;
+    }
+    .navbar-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+        position: static;
+        width: 708px;
+        height: 31px;
+        box-shadow: none;
+    }
+
+    #lang-text{
+        display: none;
+    }
+
+    .lang-option-container{
+        width: 200px;
+        height: 31px;
+        padding: 0;
+    }
+    .navbar-option{
+        @include text-properties ('Roboto Slab',700,18px,24px,#575757,0.1px);
     }
 }
