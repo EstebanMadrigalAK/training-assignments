@@ -1,0 +1,99 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+
+.islands-section {
+    @include flex-column-centered(32px,auto);
+}
+
+.islands-container {
+    @include items-container(193px, visible);
+    position: relative;
+}
+
+.island-item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    width: 194px;
+    height: 193px;
+}
+
+.island-caption-container {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    width: 178px;
+    height: 48px;
+
+    top: 137px;
+
+    background: rgba(0, 96, 150, 0.59);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+}
+
+.island-caption-title {
+    @include text-properties ('Roboto',700,13px,16px,white);
+}
+
+.island-caption-location {
+    @include text-properties ('Roboto',400,14px,16px,#F4F4F4,0.4px);
+}
+
+.island-text {
+    position: relative;
+    align-self: center;
+    left: 15px;
+}
+
+.material-icons.location-icon { 
+    color: rgba(255, 255, 255, 1);
+    font-size: small;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .island-item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .islands-container {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    .island-item {
+        width: 300px;
+        height: 298px;
+    }
+
+    .islands-container {
+        height: 299px;
+    }
+
+    .island-caption-container {
+        width: 275px;
+        height: 74px;
+        top: 212px;
+    }
+
+    .island-caption-title {
+        @include text-properties ('Roboto Slab',700,18px,24px,white,0.1px);
+    }
+    
+    .island-caption-location {
+        @include text-properties ('Roboto',400,18px,24px,#F4F4F4,0.15px);
+    }
+
+    .island-text {
+        left: 23px;
+    }
+}

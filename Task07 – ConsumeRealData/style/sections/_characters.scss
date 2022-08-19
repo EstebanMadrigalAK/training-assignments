@@ -1,0 +1,74 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+
+.characters-section {
+    @include flex-column-centered(32px,auto);
+}
+
+.characters-container {
+    @include items-container (231px,visible);
+    position: relative;
+}
+
+.characters-item {
+    display: flex;
+    position: relative;
+
+    width: 182px;
+    height: 231px;
+}
+
+.text-item {
+    @include text-properties ('Roboto', 500, 18px, 21px, white, -0.02em);
+
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 175px;
+}
+
+.filter-item {
+    position: absolute;
+    @include fit-parent;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
+    mix-blend-mode: multiply;
+    border-radius: 19px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .characters-item {
+        width: 145px;
+        height: 184px;
+    }
+
+    .characters-container {
+        height: 184px;
+    }
+
+    .text-item {
+        @include text-properties ('Roboto Slab',700,16px,20px,white,0.01px);
+        top: 140px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    .characters-item {
+        width: 220px;
+        height: 279px;
+    }
+
+    .characters-container {
+        height: 280px;
+    }
+
+    .text-item {
+        @include text-properties ('Roboto Slab',700,22px,28px,white);
+        top: 213px;
+    }
+}
