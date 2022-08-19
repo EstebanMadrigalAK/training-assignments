@@ -15,13 +15,12 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="home-page.js" type="module"></script>
 </head>
-<script src="home-page.js" type="module"></script>
-<!-- <script src="./script/Main.js" type="module"></script> -->
 <body>
     <div class="navbar">
         <section class="bar">
-            <button class="navbar-item" onclick="showMenu()">
+            <button class="navbar-item" id="menu-btn">
                 <img id="menu-icon" src="./svg/menu.png" alt="Navbar menu icon">
                 <span class="material-icons" id="close-icon">close</span>
             </button>
@@ -72,7 +71,7 @@
                         </span>
                     </small>
                     <div class="line"></div>
-                    <div class="expand-section" onclick="showSipnosis()">
+                    <div class="expand-section" id="read-all-btn">
                         <span class="material-icons" id="read-more-icon">expand_more</span>
                         <small class="read-all-label">Read All</small>
                     </div>
@@ -90,26 +89,6 @@
                     </div>
                     <div class="characters-container">
                         <div id="flex-scroll">
-                            <!-- <div class="characters-item">
-                                <div class="filter-item"></div>
-                                <img src="./svg/monkeydluffy.svg" alt="Monkey D. Luffy character card">
-                                <b class="text-item">Monkey D. Luffy</b>
-                            </div>
-                            <div class="characters-item">
-                                <div class="filter-item"></div>
-                                <img src="./svg/ace.svg" alt="Portgas D. Ace character card">
-                                <b class="text-item">Portgas D. Ace</b>
-                            </div>
-                            <div class="characters-item">
-                                <div class="filter-item"></div>
-                                <img src="./svg/zoro.svg" alt="Rorona Zoro character card">
-                                <b class="text-item">Roronoa Zoro</b>
-                            </div>
-                            <div class="characters-item">
-                                <div class="filter-item"></div>
-                                <img src="./svg/nico.svg" alt="Nico Robin character card">
-                                <b class="text-item">Nico Robin</b>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -120,36 +99,6 @@
                     </div>
                     <div class="islands-container">
                         <div id="flex-scroll">
-                            <div class="island-item">
-                                <img src="./svg/dawn.svg" alt="Dawn Island card">
-                                <div class="island-caption-container">
-                                    <div class="island-text">
-                                        <label class="island-caption-title">Dawn Island</label><br>
-                                        <span class="material-icons location-icon">fmd_good</span>
-                                        <small class="island-caption-location">East Blue</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="island-item">
-                                <img src="./svg/reverse.svg" alt="Reverse Mountain Island card">
-                                <div class="island-caption-container">
-                                    <div class="island-text">
-                                        <label class="island-caption-title">Reverse Mountain</label><br>
-                                        <span class="material-icons location-icon">fmd_good</span>
-                                        <small class="island-caption-location">Red Line</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="island-item">
-                                <img src="./svg/reverse.svg" alt="Reverse Mountain Island card">
-                                <div class="island-caption-container">
-                                    <div class="island-text">
-                                        <label class="island-caption-title">Reverse Mountain</label><br>
-                                        <span class="material-icons location-icon">fmd_good</span>
-                                        <small class="island-caption-location">Red Line</small>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,50 +108,6 @@
                         <a class="see-all-btn" href="/mist-objects">See all</b>
                     </div>
                     <div class="mist-object-container">
-                        <div class="mist-object-item">
-                            <img class="mist-object-img" src="./svg/object2.svg" alt="Gomu Gomu No Mi object-mist card">
-                            <div class="mist-object-text">
-                                <label class="mist-object-caption-title">Gomu Gomu No Mi</label>
-                                <small class="mist-object-caption-description">Is a Paramecia-type Devil Fruit that
-                                    gives the
-                                    user's body the properties of rubber, making the user a Rubber Human. It was then
-                                    accidentally eaten by the series protagonist, Monkey D. Luffy.</small>
-                            </div>
-        
-                        </div>
-                        <div class="mist-object-item">
-                            <img class="mist-object-img" src="./svg/object2.svg" alt="Gomu Gomu No Mi object-mist card">
-                            <div class="mist-object-caption-container">
-                                <div class="mist-object-text">
-                                    <label class="mist-object-caption-title">Gomu Gomu No Mi</label>
-                                    <small class="mist-object-caption-description">Is a Paramecia-type Devil Fruit that
-                                        gives the
-                                        user's body the properties of rubber, making the user a Rubber Human. It was
-                                        then
-                                        accidentally eaten by the series protagonist, Monkey D. Luffy.</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mist-object-item">
-                            <img class="mist-object-img" src="./svg/object2.svg" alt="Gomu Gomu No Mi object-mist card">
-                            <div class="mist-object-text">
-                                <label class="mist-object-caption-title">Gomu Gomu No Mi</label>
-                                <small class="mist-object-caption-description">Is a Paramecia-type Devil Fruit that
-                                    gives the
-                                    user's body the properties of rubber, making the user a Rubber Human. It was then
-                                    accidentally eaten by the series protagonist, Monkey D. Luffy.</small>
-                            </div>
-                        </div>
-                        <div class="mist-object-item">
-                            <img class="mist-object-img" src="./svg/object2.svg" alt="Gomu Gomu No Mi object-mist card">
-                            <div class="mist-object-text">
-                                <label class="mist-object-caption-title">Gomu Gomu No Mi</label>
-                                <small class="mist-object-caption-description">Is a Paramecia-type Devil Fruit that
-                                    gives the
-                                    user's body the properties of rubber, making the user a Rubber Human. It was then
-                                    accidentally eaten by the series protagonist, Monkey D. Luffy.</small>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

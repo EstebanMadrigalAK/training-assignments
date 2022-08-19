@@ -14,9 +14,14 @@
     position: relative;
 }
 
+#character-img {
+    border-radius: 19px;
+}
+
 .characters-item {
     display: flex;
     position: relative;
+    flex-shrink: 0;
 
     width: 182px;
     height: 231px;

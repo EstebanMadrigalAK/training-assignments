@@ -73,6 +73,10 @@
     gap: 48px;
 }
 
+.item-img{
+    @include fit-parent;
+}
+
 @media only screen and (min-width: 768px) {
     /* For tablet: */
     .crew-image-container {

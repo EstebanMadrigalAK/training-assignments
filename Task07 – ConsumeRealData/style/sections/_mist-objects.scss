@@ -24,7 +24,7 @@
     width: 358px;
     height: 132px;
 
-    overflow: auto;
+    
 }
 
 .mist-object-img {
@@ -41,11 +41,12 @@
     left: 117px;
 
     width: 241px;
-    height: 132px;
+    height: 100%;
 
     background: rgba(0, 96, 150, 0.59);
     backdrop-filter: blur(4px);
     border-radius: 0px 6px 6px 0px;
+    overflow: auto;
 }
 
 .mist-object-caption-title {
