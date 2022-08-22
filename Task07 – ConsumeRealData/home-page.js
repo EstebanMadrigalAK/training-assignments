@@ -4,21 +4,23 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
-import {getOnePieceData} from './json-reader.mjs';
+import { getOnePieceData } from './json-reader.mjs';
 
 let onePieceData;
+let charactersCardsToShow = 4;
+let islandCardsToShow = 3;
+let mistObjectsCardsToShow = 4;
 
-window.onload = async() => {
+window.onload = async () => {
     onePieceData = await getOnePieceData();
-    console.log(onePieceData);
     showCharacters();
     showIslands();
     showMistObjects();
 };
 
-function showCharacters(){
+function showCharacters() {
     let charContainer = document.querySelector('.characters-container #flex-scroll');
-    onePieceData.characters.forEach(element => {
+    onePieceData.characters.slice(0, charactersCardsToShow).forEach(element => {
         charContainer.innerHTML += `<div class="characters-item">
                                         <div class="filter-item"></div>
                                         <img id="character-img" class="item-img" src="./svg/${element.img}" alt="${element.name} character card">
@@ -27,10 +29,10 @@ function showCharacters(){
     });
 }
 
-function showIslands(){
+function showIslands() {
     let islandContainer = document.querySelector('.islands-container #flex-scroll');
-    onePieceData.islands.forEach(element => {
-        if(element.img !== "placeolder.svg"){
+    onePieceData.islands.slice(0, islandCardsToShow).forEach(element => {
+        if (element.img !== "placeolder.svg") {
             islandContainer.innerHTML += `<div class="island-item">
                                             <img id="island-img" class="item-img" src="./svg/${element.img}" alt="${element.name} island card">
                                             <div class="island-caption-container">
@@ -45,18 +47,17 @@ function showIslands(){
     });
 }
 
-function showMistObjects(){
+function showMistObjects() {
     let mistObjectContainer = document.querySelector('.mist-object-container');
-    onePieceData.mysticObjects.forEach(element => {
-        if(element.img !== "placeolder.svg"){
-            mistObjectContainer.innerHTML += `<div class="mist-object-item">
+    onePieceData.mysticObjects.slice(0, mistObjectsCardsToShow).forEach(element => {
+        mistObjectContainer.innerHTML += `<div class="mist-object-item">
                                                 <img class="mist-object-img" src="./svg/${element.img}" alt="${element.name} object-mist card">
                                                 <div class="mist-object-text">
                                                     <label class="mist-object-caption-title">${element.name}</label>
                                                     <small class="mist-object-caption-description">${element.description}.</small>
                                                 </div>
                                             </div>`
-        }
+
     });
 }
 
