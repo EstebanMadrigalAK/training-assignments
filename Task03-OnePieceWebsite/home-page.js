@@ -8,7 +8,6 @@ import {getOnePieceData} from './json-reader.mjs';
 
 window.onload = async() => {
     const onePieceData = await getOnePieceData();
-    console.log(onePieceData);
     let charContainer = document.querySelector('.characters-container #flex-scroll');
 
     onePieceData.characters.forEach(element => {

@@ -24,6 +24,6 @@ export async function getOnePieceData() {
         sortArray(onePieceData.mysticObjects);
         return await onePieceData;
     } catch (error) {
-        console.log(error);
+        alert(error);
     }
 }

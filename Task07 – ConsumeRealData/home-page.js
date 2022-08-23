@@ -103,10 +103,3 @@ function showSipnosis() {
         logo.style.display = "none";
     }
 }
-
-
-
-
-
-
-
