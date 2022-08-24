@@ -14,10 +14,10 @@
       <div className="navbar">
         <section className="bar">
             <button className="navbar-item" id="menu-btn">
-                <img id="menu-icon" src={menu} alt="Navbar menu icon"></img>
+                <img id="menu-icon" src={menu} alt="Navbar menu icon"/>
                     <span className="material-icons" id="close-icon">close</span>
             </button>
-            <img className="navbar-logo" src={onePieceLogo} alt="Navbar One-Piece logo"></img>
+            <img className="navbar-logo" src={onePieceLogo} alt="Navbar One-Piece logo"/>
             <div className="navbar-item"></div>
         </section>
         <section className="navbar-menu">
@@ -28,11 +28,11 @@
             <div className="lang-option-container">
                 <button className="lang-option">
                     <small className="navbar-option" id="lang-text">English</small>
-                    <img src="./svg/usd.svg" alt="United States flag icon"></img>
+                    <img src="./svg/usd.svg" alt="United States flag icon"/>
                 </button>
                 <button className="lang-option">
                     <small className="navbar-option" id="lang-text">Spanish</small>
-                    <img src="./svg/spn.svg" alt="Spain flag icon"></img>
+                    <img src="./svg/spn.svg" alt="Spain flag icon"/>
                 </button>
             </div>
         </section>
