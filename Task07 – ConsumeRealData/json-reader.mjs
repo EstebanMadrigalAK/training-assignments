@@ -18,11 +18,13 @@ function sortArray(objects){
 export async function getOnePieceData() {
     const url = 'https://static.akurey.com/trainings/OnePieceInformation.json';
     try {
-        let onePieceData = await fetch(url).then(response => response.json());
-        sortArray(onePieceData.characters);
-        sortArray(onePieceData.islands);
-        sortArray(onePieceData.mysticObjects);
-        return await onePieceData;
+        const onePieceData = await fetch(url);
+        const dataAsJson = await onePieceData.json();
+        sortArray(dataAsJson.characters);
+        sortArray(dataAsJson.islands);
+        sortArray(dataAsJson.mysticObjects);
+        return dataAsJson;
+            
     } catch (error) {
         alert(error);
     }
