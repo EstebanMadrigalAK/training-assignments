@@ -5,14 +5,14 @@
  * @summary short description for the file
  */
 
-function CharacterSection(){
+function IslandSection(){
     return(
-        <div className="characters-section">
+        <div className="islands-section">
             <div className="section-header">
-                <b className="section-title">Characters</b>
-                <a className="see-all-btn" href="/characters">See all</a>
+                <b className="section-title">Islands</b>
+                <a className="see-all-btn" href="/islands">See all</a>
             </div>
-            <div className="characters-container">
+            <div className="islands-container">
                 <div id="flex-scroll">
                 </div>
             </div>
@@ -20,4 +20,4 @@ function CharacterSection(){
     );
 }
 
-export default CharacterSection;
+export default IslandSection;
