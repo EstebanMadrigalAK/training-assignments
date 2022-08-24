@@ -4,7 +4,23 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
- function showSipnosis() {
+import {getOnePieceData} from './json-reader.mjs';
+
+window.onload = async() => {
+    const onePieceData = await getOnePieceData();
+    let charContainer = document.querySelector('.characters-container #flex-scroll');
+
+    onePieceData.characters.forEach(element => {
+        charContainer.innerHTML += `<div class="characters-item">
+                                        <div class="filter-item"></div>
+                                        <img src="./svg/${element.img}" alt=${element.name}>
+                                        <b class="text-item">${element.name}</b>
+                                    </div>`
+    });
+};
+
+
+function showSipnosis() {
     const moreText = document.getElementById('extra-sipnosis-description');
     const btnText = document.querySelector('.read-all-label');
     const icon = document.querySelector('.material-icons');
@@ -27,6 +43,7 @@
         logo.style.display = "none";
     }
 }
+
 function showMenu() {
     const menu = document.querySelector('.navbar-menu');
     const cancelIcon = document.getElementById('close-icon')
