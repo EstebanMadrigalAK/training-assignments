@@ -9,12 +9,14 @@ function Game() {
     const scoreCard = document.querySelector('.scores');
     const inputName = document.querySelector('#pname');
     const levelText = document.querySelector('.level');
+    const timeText = document.querySelector('.time');
 
     const minPeepTime = 200;
     let maxPeepTime = 1000;
     const failAudio = "kick";
     const hitAudio = "hihat"
     const elementToHit = "mole";
+    const gameTime = 10000;
 
     let players = [];
     let lastHole;
@@ -49,9 +51,20 @@ function Game() {
         }, time);
     }
 
+    this.updateTime = () => {
+        setTimeout(() => {
+            if(!timeUp){
+                console.log(timeText.textContent);
+                timeText.textContent = timeText.textContent-1;
+                this.updateTime();
+            }
+        }, 1000)
+    }
+
     this.startGame = () => {
         playerName = (inputName.value == "") ? "Anonymous" : inputName.value;
         
+        timeText.textContent = (gameTime/1000);
         scoreBoard.textContent = 0;
         score = 0;
         levelText.textContent = 1;
@@ -59,7 +72,8 @@ function Game() {
 
         timeUp = false;
         this.peep();
-        setTimeout(() => this.finishGame(), 10000)
+        this.updateTime();
+        setTimeout(() => this.finishGame(), gameTime)
     }
 
     this.sortPlayers = () => {

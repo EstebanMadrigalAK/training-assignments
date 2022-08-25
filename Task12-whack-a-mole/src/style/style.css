@@ -1,17 +1,15 @@
-label {
-  font-size: 2rem;
-  font-family: "Amatic SC", cursive;
-}
-
-h1 {
-  text-align: center;
-  font-size: 10rem;
-  line-height: 1;
-  margin: 2rem 5rem;
-  background: #ffc600;
-  font-family: "Amatic SC", cursive;
-}
-
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
 .score {
   background: rgba(255, 255, 255, 0);
   line-height: 1;
@@ -35,7 +33,7 @@ h1 {
 
 .hole:after {
   display: block;
-  background: url("./imgs/dirt.svg") bottom center no-repeat;
+  background: url("../assets/imgs/dirt.svg") bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
@@ -46,7 +44,7 @@ h1 {
 }
 
 .mole {
-  background: url("./imgs/mole.svg") bottom center no-repeat;
+  background: url("../assets/imgs/mole.svg") bottom center no-repeat;
   background-size: 60%;
   position: absolute;
   top: 100%;
@@ -59,17 +57,6 @@ h1 {
   top: 0;
 }
 
-button {
-  padding: 2rem;
-  font-size: x-large;
-  background-color: firebrick;
-}
-
-input {
-  width: 20rem;
-  height: 3rem;
-}
-
 .options {
   margin: 3rem;
   display: flex;
@@ -78,18 +65,10 @@ input {
   gap: 2rem;
 }
 
-aside {
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: left;
-  background-color: lightgray;
-}
-
 .scorecard {
   border-style: groove;
   background-color: rgba(0, 255, 255, 0.494);
-  width: 70%;
+  width: 60%;
   padding: 1rem;
 }
 
@@ -102,8 +81,16 @@ aside {
 
 .levelcard {
   border-style: groove;
-  width: 30%;
+  width: 15%;
   background-color: rgba(137, 43, 226, 0.475);
+  text-align: center;
+  height: 5rem;
+}
+
+.timecard {
+  border-style: groove;
+  width: 25%;
+  background-color: rgba(226, 43, 43, 0.475);
   text-align: center;
   height: 5rem;
 }
@@ -118,6 +105,31 @@ html {
 
 body {
   margin: 0;
+}
+
+label {
+  font-size: 2rem;
+  font-family: "Amatic SC", cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin: 2rem 5rem;
+  background: #ffc600;
+  font-family: "Amatic SC", cursive;
+}
+
+button {
+  padding: 2rem;
+  font-size: x-large;
+  background-color: firebrick;
+}
+
+input {
+  width: 20rem;
+  height: 3rem;
 }
 
 *,

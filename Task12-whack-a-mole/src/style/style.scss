@@ -1,0 +1,51 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+
+@import 'game';
+
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+}
+
+body {
+    margin: 0;
+}
+
+label {
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10rem;
+    line-height: 1;
+    margin: 2rem 5rem;
+    background: #ffc600;
+    font-family: 'Amatic SC', cursive;
+}
+
+button {
+    padding: 2rem;
+    font-size: x-large;
+    background-color: firebrick;
+}
+
+input {
+    width: 20rem;
+    height: 3rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}

@@ -1,10 +1,17 @@
+<!-- 
+    All Rights Reserved
+    This software is property information of AKUREY S.A.
+    Contact us at contact@akurey.com
+    @summary short description for the file
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>HTML + JS + CSS</title>
-  <link rel="stylesheet" href="src/assets/style.css">
+  <link rel="stylesheet" href="src/style/style.css">
 </head>
 
 <body>
@@ -16,6 +23,9 @@
     </div>
     <div class="levelcard">
       <h2>Level: <span class="level">1</span></h2>
+    </div>
+    <div class="timecard">
+      <h2>Time: <span class="time">10</span>segs</h2>
     </div>
   </div>
   <div class="game">
@@ -53,7 +63,6 @@
     <input type="text" id="pname" name="pname">
     <button onClick="game.startGame()">WHACK!</button>
   </div>
-
 
   <audio id="hihat" src="src/assets/sounds/hihat.wav"></audio>
   <audio id="kick" src="src/assets/sounds/kick.wav"></audio>
