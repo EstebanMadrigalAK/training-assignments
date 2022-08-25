@@ -15,7 +15,7 @@ function Navbar() {
         const menu = document.querySelector('.navbar-menu');
         const cancelIcon = document.getElementById('close-icon')
         const menuIcon = document.getElementById('menu-icon');
-        if (menu.style.display == "flex") {
+        if (menu.style.display === "flex") {
             menu.style.display = "none";
             cancelIcon.style.display = "none";
             menuIcon.style.display = "inline";
