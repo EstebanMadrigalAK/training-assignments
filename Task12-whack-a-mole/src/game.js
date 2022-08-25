@@ -8,6 +8,9 @@ function Game() {
     const moles = document.querySelectorAll('.mole');
     const minPeepTime = 200;
     const maxPeepTime = 1000;
+    const failAudio = "kick";
+    const hitAudio = "hihat"
+    const elementToHit = "mole";
     let lastHole;
     let timeUp = false;
     let score = 0;
@@ -48,12 +51,12 @@ function Game() {
 
     this.bonk = e => {
         if (!e.isTrusted) return;
-        let audioToPlay = "kick"
-        if (e.target.className == "mole"){
+        let audioToPlay = failAudio
+        if (e.target.className == elementToHit){
             score++;
             e.target.classList.remove('up');
             scoreBoard.textContent = score;
-            audioToPlay = "hihat";
+            audioToPlay = hitAudio;
         }
         let audio = document.getElementById(audioToPlay); 
         audio.play();
