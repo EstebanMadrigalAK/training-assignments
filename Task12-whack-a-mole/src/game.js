@@ -53,9 +53,9 @@ function Game() {
 
     this.updateTime = () => {
         setTimeout(() => {
-            if(!timeUp){
+            if (!timeUp) {
                 console.log(timeText.textContent);
-                timeText.textContent = timeText.textContent-1;
+                timeText.textContent = timeText.textContent - 1;
                 this.updateTime();
             }
         }, 1000)
@@ -63,8 +63,8 @@ function Game() {
 
     this.startGame = () => {
         playerName = (inputName.value == "") ? "Anonymous" : inputName.value;
-        
-        timeText.textContent = (gameTime/1000);
+
+        timeText.textContent = (gameTime / 1000);
         scoreBoard.textContent = 0;
         score = 0;
         levelText.textContent = 1;
@@ -100,7 +100,7 @@ function Game() {
 
     this.updateScores = () => {
         scoreCard.innerHTML = "";
-        players.slice(0 , 5).forEach(player =>{
+        players.slice(0, 5).forEach(player => {
             scoreCard.innerHTML += `<b>${player.name} ${player.score}</b><br>`;
         })
     }
@@ -120,7 +120,7 @@ function Game() {
     }
 
     this.manageLevels = () => {
-        if(score > 5){
+        if (score > 5) {
             maxPeepTime = 700;
             level++;
             levelText.textContent = level;

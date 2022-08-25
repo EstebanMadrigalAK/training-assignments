@@ -4,8 +4,8 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
- 
- .game {
+
+.game {
     width: 600px;
     height: 600px;
     display: flex;
@@ -54,7 +54,7 @@
     gap: 2rem;
 }
 
-.gameInfo{
+.gameInfo {
     display: flex;
     margin: 2rem;
     gap: 1rem;
@@ -62,17 +62,17 @@
     align-items: center;
 }
 
-.scorecard{
+.scorecard {
     @include card(60%, rgba(0, 255, 255, 0.475));
 }
 
-.levelcard{
+.levelcard {
     @include card(15%, rgba(137, 43, 226, 0.475));
     text-align: center;
     height: 5rem;
 }
 
-.timecard{
+.timecard {
     @include card(25%, rgba(226, 43, 43, 0.475));
     text-align: center;
     height: 5rem;
