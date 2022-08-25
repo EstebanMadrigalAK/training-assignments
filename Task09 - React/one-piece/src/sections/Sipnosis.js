@@ -6,6 +6,29 @@
  */
 
 function Sipnosis(){
+    function showSipnosis() {
+        const moreText = document.getElementById('extra-sipnosis-description');
+        const btnText = document.querySelector('.read-all-label');
+        const icon = document.querySelector('.material-icons');
+        const logo = document.querySelector('.logo-header');
+    
+        if (moreText.style.display === "inline") {
+            moreText.style.display = "none";
+            btnText.innerHTML = "Read All";
+            icon.innerHTML = "expand_more";
+            logo.style.display = "none";
+        } else {
+            moreText.style.display = "inline";
+            btnText.innerHTML = "Read Less";
+            icon.innerHTML = "expand_less";
+            logo.style.display = "inline";
+        }
+    
+        let mediaQuery = window.matchMedia('(min-width: 768px)')
+        if (mediaQuery.matches) {
+            logo.style.display = "none";
+        }
+    }
     return (
         <div className="sipnosis-container">
             <b className="sipnosis-title">Sipnosis</b>
@@ -26,7 +49,7 @@ function Sipnosis(){
                 </span>
             </small>
             <div className="line"></div>
-            <div className="expand-section" id="read-all-btn">
+            <div className="expand-section" id="read-all-btn" onClick={showSipnosis}>
                 <span className="material-icons" id="read-more-icon">expand_more</span>
                 <small className="read-all-label">Read All</small>
             </div>
