@@ -1,0 +1,13 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+
+@mixin card ($width, $background-color) {
+    border-style: groove;
+    padding: 1rem;
+    background-color: $background-color;
+    width: $width;
+}

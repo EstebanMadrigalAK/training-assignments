@@ -10,12 +10,12 @@
  * Contact us at contact@akurey.com
  * @summary short description for the file
  */
-.score {
-  background: rgba(255, 255, 255, 0);
-  line-height: 1;
-  border-radius: 1rem;
-}
-
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
 .game {
   width: 600px;
   height: 600px;
@@ -65,32 +65,35 @@
   gap: 2rem;
 }
 
-.scorecard {
-  border-style: groove;
-  background-color: rgba(0, 255, 255, 0.494);
-  width: 60%;
-  padding: 1rem;
-}
-
 .gameInfo {
   display: flex;
   margin: 2rem;
   gap: 1rem;
   justify-content: space-between;
+  align-items: center;
+}
+
+.scorecard {
+  border-style: groove;
+  padding: 1rem;
+  background-color: rgba(0, 255, 255, 0.475);
+  width: 60%;
 }
 
 .levelcard {
   border-style: groove;
-  width: 15%;
+  padding: 1rem;
   background-color: rgba(137, 43, 226, 0.475);
+  width: 15%;
   text-align: center;
   height: 5rem;
 }
 
 .timecard {
   border-style: groove;
-  width: 25%;
+  padding: 1rem;
   background-color: rgba(226, 43, 43, 0.475);
+  width: 25%;
   text-align: center;
   height: 5rem;
 }
