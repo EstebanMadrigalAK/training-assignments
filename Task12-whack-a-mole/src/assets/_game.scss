@@ -1,4 +1,7 @@
-
+label {
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+}
 
 h1 {
     text-align: center;
@@ -21,6 +24,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    cursor: url(../assets/imgs/stick125.png), auto;
 }
 
 .hole {
@@ -56,9 +60,50 @@ h1 {
 }
 
 button {
-    position: absolute;
-    left: 15rem;
     padding: 2rem;
     font-size: x-large;
     background-color: firebrick;
+}
+
+input {
+    width: 20rem;
+    height: 3rem;
+}
+
+.options {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    background-color: lightgray;
+}
+
+.scorecard{
+    border-style: groove;
+    background-color: rgba(0, 255, 255, 0.494);
+    width: 70%;
+    padding: 1rem;
+}
+
+.gameInfo{
+    display: flex;
+    margin: 2rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.levelcard{
+    border-style: groove;
+    width: 30%;
+    background-color: rgba(137, 43, 226, 0.475);
+    text-align: center;
+    height: 5rem;
 }

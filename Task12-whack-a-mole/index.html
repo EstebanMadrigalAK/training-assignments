@@ -9,6 +9,15 @@
 
 <body>
   <h1>Whack-a-mole! <span class="score">0</span></h1>
+  <div class="gameInfo">
+    <div class="scorecard">
+      <h2>Top 5 Best Scores:</h2>
+      <div class="scores"></div>
+    </div>
+    <div class="levelcard">
+      <h2>Level: <span class="level">1</span></h2>
+    </div>
+  </div>
   <div class="game">
     <div class="hole hole1">
       <div class="mole"></div>
@@ -38,7 +47,14 @@
       <div class="mole"></div>
     </div>
   </div>
-  <button onClick="game.startGame()">WHACK!</button>
+
+  <div class="options">
+    <label for="pname">Player:</label>
+    <input type="text" id="pname" name="pname">
+    <button onClick="game.startGame()">WHACK!</button>
+  </div>
+
+
   <audio id="hihat" src="src/assets/sounds/hihat.wav"></audio>
   <audio id="kick" src="src/assets/sounds/kick.wav"></audio>
   <script src="src/game.js"></script>
