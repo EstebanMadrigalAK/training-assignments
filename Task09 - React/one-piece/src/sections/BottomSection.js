@@ -11,20 +11,20 @@ import MistObjectsSection from './MistObjectsSection';
 import { useEffect, useState } from "react";
 
 
-function sortArray(objects){
-    objects.sort(function(obj1, obj2){
+function sortArray(objects) {
+    objects.sort(function (obj1, obj2) {
         let x = obj1.name.toLowerCase();
         let y = obj2.name.toLowerCase();
-        if (x < y) {return -1;}
-        if (x > y) {return 1;}
+        if (x < y) { return -1; }
+        if (x > y) { return 1; }
         return 0;
     });
 }
 
-function BottomSection(){
+function BottomSection() {
 
     const [data, setData] = useState();
-    
+
     useEffect(() => {
         getOnePieceData();
     }, [])
@@ -43,10 +43,10 @@ function BottomSection(){
         }
     }
 
-    if(!data){
+    if (!data) {
         return <p>Loading...</p>
     }
-    return(
+    return (
         <section className="bottom">
             <Searchbar></Searchbar>
             <CharacterSection data={data.characters}></CharacterSection>

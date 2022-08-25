@@ -5,10 +5,10 @@
  * @summary short description for the file
  */
 
-function MistObjectCard(props){
-    return(
+function MistObjectCard(props) {
+    return (
         <div className="mist-object-item">
-            <img className="mist-object-img" src={props.img} alt={`${props.name} object-mist card`}/>
+            <img className="mist-object-img" src={props.img} alt={`${props.name} object-mist card`} />
             <div className="mist-object-text">
                 <label className="mist-object-caption-title">{props.name}</label>
                 <small className="mist-object-caption-description">{props.description}.</small>

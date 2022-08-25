@@ -11,7 +11,7 @@ import Dawn from "../svg/dawn.svg";
 import Reverse from "../svg/reverse.svg";
 import Placeholder from "../svg/placeholder.svg";
 
-function IslandSection(props){
+function IslandSection(props) {
     function getImage(img) {
         const characters = {
             "reverse.svg": Reverse,
@@ -20,14 +20,14 @@ function IslandSection(props){
         return characters[img] || Placeholder;
     }
 
-    return(
+    return (
         <div className="islands-section">
             <ObjectContainerHeader title="Islands" refLink="/islands"></ObjectContainerHeader>
             <div className="islands-container">
                 <div id="flex-scroll">
-                {props.data.slice(0, 3).map((data, idx) => (
-                    <IslandCard key={idx} img = {getImage(data.img)} name={data.name} location={data.Location}></IslandCard>
-                ))}
+                    {props.data.slice(0, 3).map((data, idx) => (
+                        <IslandCard key={idx} img={getImage(data.img)} name={data.name} location={data.Location}></IslandCard>
+                    ))}
                 </div>
             </div>
         </div>

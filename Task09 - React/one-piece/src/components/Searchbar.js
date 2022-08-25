@@ -5,11 +5,11 @@
  * @summary short description for the file
  */
 
-function Searchbar(){
-    return(
+function Searchbar() {
+    return (
         <div className="searchbar-container">
             <span className="material-icons" id="search-icon">search</span>
-            <input className="searchbar" placeholder="Search Characters, Islands or Objects"/>
+            <input className="searchbar" placeholder="Search Characters, Islands or Objects" />
         </div>
     );
 }

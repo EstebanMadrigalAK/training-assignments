@@ -5,10 +5,10 @@
  * @summary short description for the file
  */
 
-function IslandCard(props){
-    return(
+function IslandCard(props) {
+    return (
         <div className="island-item">
-            <img id="island-img" className="item-img" src={props.img} alt={`${props.name} island card`}/>
+            <img id="island-img" className="item-img" src={props.img} alt={`${props.name} island card`} />
             <div className="island-caption-container">
                 <div className="island-text">
                     <label className="island-caption-title">{props.name}</label><br />

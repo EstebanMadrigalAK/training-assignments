@@ -7,11 +7,11 @@
 
 import crew from '../svg/crew.svg';
 
-function CrewImage(){
-    return(
+function CrewImage() {
+    return (
         <div className="crew-image-container">
             <div className="crew-filter"></div>
-            <img className="crew-image" src={crew} alt="Top One-Piece crew"/>
+            <img className="crew-image" src={crew} alt="Top One-Piece crew" />
         </div>
     );
 }

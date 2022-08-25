@@ -7,8 +7,8 @@
 import TopSection from "./TopSection";
 import BottomSection from "./BottomSection";
 
-function MainSection(){
-    return(
+function MainSection() {
+    return (
         <main>
             <section>
                 <TopSection></TopSection>

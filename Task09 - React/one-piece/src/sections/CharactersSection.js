@@ -13,7 +13,7 @@ import Nico from "../svg/nico.svg";
 import Zoro from "../svg/zoro.svg";
 import Placeholder from "../svg/placeholder.svg";
 
-function CharacterSection(props){
+function CharacterSection(props) {
     function getImage(img) {
         const characters = {
             "monkeydluffy.svg": Luffy,
@@ -24,13 +24,13 @@ function CharacterSection(props){
         return characters[img] || Placeholder;
     }
 
-    return(
+    return (
         <div className="characters-section">
             <ObjectContainerHeader title="Characters" refLink="/characters"></ObjectContainerHeader>
             <div className="characters-container">
                 <div id="flex-scroll">
                     {props.data.slice(0, 4).map((data, idx) => (
-                        <CharacterCard key={idx} img = {getImage(data.img)} name={data.name}></CharacterCard>
+                        <CharacterCard key={idx} img={getImage(data.img)} name={data.name}></CharacterCard>
                     ))}
                 </div>
             </div>

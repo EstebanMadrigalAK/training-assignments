@@ -9,11 +9,11 @@ import Sipnosis from './Sipnosis';
 
 import onePieceLogo from '../svg/One-Piece-Logo 1.png';
 
-function TopSection(){
-    return(
-        <section className = "top">
+function TopSection() {
+    return (
+        <section className="top">
             <CrewImage></CrewImage>
-            <img className="logo-header" src={onePieceLogo} alt="Sipnosis One-Piece logo"/>
+            <img className="logo-header" src={onePieceLogo} alt="Sipnosis One-Piece logo" />
             <Sipnosis></Sipnosis>
         </section>
     );

@@ -5,13 +5,13 @@
  * @summary short description for the file
  */
 
-function Sipnosis(){
+function Sipnosis() {
     function showSipnosis() {
         const moreText = document.getElementById('extra-sipnosis-description');
         const btnText = document.querySelector('.read-all-label');
         const icon = document.querySelector('.material-icons');
         const logo = document.querySelector('.logo-header');
-    
+
         if (moreText.style.display === "inline") {
             moreText.style.display = "none";
             btnText.innerHTML = "Read All";
@@ -23,7 +23,7 @@ function Sipnosis(){
             icon.innerHTML = "expand_less";
             logo.style.display = "inline";
         }
-    
+
         let mediaQuery = window.matchMedia('(min-width: 768px)')
         if (mediaQuery.matches) {
             logo.style.display = "none";
