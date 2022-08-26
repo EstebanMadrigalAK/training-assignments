@@ -1,0 +1,37 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+
+.custom-footer {
+   @include flex-column-centered (38px);
+   justify-content: center;
+
+   height: 271px;
+   background: #0C75AF;
+   margin-top: 70px;
+}
+
+.footer-image {
+   width: 97px;
+   height: 89px;
+}
+
+.footer-text {
+   width: 286px;
+   height: 48px;
+
+   @include text-properties ('Roboto', 400, 14px, 16px, white, 0.4px);
+
+   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+   /* For tablet: */
+   .custom-footer {
+      flex-direction: row;
+      gap: 38px;
+   }
+}

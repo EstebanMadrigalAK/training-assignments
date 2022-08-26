@@ -1,0 +1,38 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+
+@mixin text-properties ($family,$weight,$size,$height,$color:default,$spacing:default) {
+    font-family: $family;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+    letter-spacing: $spacing;
+}
+
+@mixin flex-column-centered ($row-gap:default, $width:100%) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $width;
+    row-gap: $row-gap;
+}
+
+@mixin items-container ($height,$overflow:auto) {
+    display: flex;
+    overflow: $overflow;
+
+    width: 100%;
+    height: $height;
+}
+
+@mixin fit-parent {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
