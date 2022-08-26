@@ -2,7 +2,7 @@ const game = new Game();
 game.initialize();
 
 function Game() {
-    const holes = document.querySelectorAll('.hole');
+    let holes;
     const scoreBoard = document.querySelector('.score');
     const game = document.querySelector('.game');
     const moles = document.querySelectorAll('.mole');
@@ -27,6 +27,18 @@ function Game() {
 
     this.initialize = () => {
         game.addEventListener('click', this.bonk);
+        this.createHoles();
+        holes = document.querySelectorAll('.hole')
+    }
+
+    this.createHoles = () => {
+        let htmlToBeInserted = '';
+        [...Array(9)].forEach((_, index) => {
+            htmlToBeInserted += `<div class="hole hole${index}">
+                                    <div class="mole"></div>
+                                </div>`;
+        });
+        game.innerHTML = htmlToBeInserted;
     }
 
     this.randomTime = (min, max) => {
@@ -54,11 +66,10 @@ function Game() {
     this.updateTime = () => {
         setTimeout(() => {
             if (!timeUp) {
-                console.log(timeText.textContent);
                 timeText.textContent = timeText.textContent - 1;
                 this.updateTime();
             }
-        }, 1000)
+        }, 1000);
     }
 
     this.startGame = () => {
@@ -73,29 +84,19 @@ function Game() {
         timeUp = false;
         this.peep();
         this.updateTime();
-        setTimeout(() => this.finishGame(), gameTime)
+        setTimeout(() => this.finishGame(), gameTime);
     }
 
     this.sortPlayers = () => {
-        players.sort((player1, player2) => {
-            if (player1.score < player2.score) {
-                return 1;
-            }
-            else if (player1.score > player2.score) {
-                return -1;
-            }
-            return 0;
-        });
+        players.sort((player1, player2) => player1.score - player2.score);
     }
 
     this.finishGame = () => {
         timeUp = true;
         players.push({ 'name': playerName, 'score': score });
-        console.table(players);
         this.sortPlayers();
         this.updateScores();
         alert("El juego acabo!");
-        console.table(players);
     }
 
     this.updateScores = () => {
@@ -107,7 +108,7 @@ function Game() {
 
     this.bonk = e => {
         if (!e.isTrusted) return;
-        let audioToPlay = failAudio
+        let audioToPlay = failAudio;
         if (e.target.className == elementToHit) {
             score++;
             e.target.classList.remove('up');
@@ -127,5 +128,3 @@ function Game() {
         }
     }
 }
-
-
