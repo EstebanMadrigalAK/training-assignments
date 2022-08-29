@@ -1,0 +1,841 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 78px;
+}
+
+.navbar-item {
+  width: 15%;
+  height: 16px;
+}
+
+.navbar-logo {
+  width: 112px;
+  height: 40px;
+}
+
+.navbar-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  position: absolute;
+  width: 100%;
+  height: 406px;
+  top: 78px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 3px #F3F3F3;
+  z-index: 20;
+}
+
+.navbar-option {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #575757;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+}
+
+#close-icon {
+  display: none;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  height: 31px;
+}
+
+.lang-option:hover {
+  background: #ECECEC;
+}
+
+.lang-option-container {
+  display: flex;
+  gap: 20px;
+  padding: 0 16px 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 358px;
+  height: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .bar {
+    height: 109px;
+  }
+  .navbar-logo {
+    width: 163px;
+    height: 58px;
+  }
+  .navbar-menu {
+    top: 109px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .navbar {
+    flex-direction: row;
+    padding: 0 170px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bar {
+    height: 100px;
+    width: 163px;
+    box-sizing: border-box;
+  }
+  .navbar-item {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+    position: static;
+  }
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    position: static;
+    width: 708px;
+    height: 31px;
+    box-shadow: none;
+  }
+  #lang-text {
+    display: none;
+  }
+  .lang-option-container {
+    width: 200px;
+    height: 31px;
+    padding: 0;
+  }
+  .navbar-option {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #575757;
+    letter-spacing: 0.1px;
+  }
+}
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.searchbar-container {
+  display: flex;
+  height: 56px;
+  margin: 16px 16px 0;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 16px 0px 16px 8px;
+  border: 1px solid #B5B5B5;
+  border-radius: 6px;
+}
+
+.searchbar {
+  border: none;
+  width: 90%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7D7D7D;
+  letter-spacing: 0.25px;
+}
+
+#search-icon {
+  color: #7D7D7D;
+  font-size: 30px;
+  width: 10%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .searchbar-container {
+    margin: 0px;
+  }
+}
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.sipnosis-title {
+  width: 100%;
+  height: 28px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: default;
+  letter-spacing: default;
+}
+
+.sipnosis-description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: 0.25px;
+  letter-spacing: default;
+}
+
+.expand-section {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+#extra-sipnosis-description {
+  display: none;
+}
+
+#read-more-icon {
+  color: #0C75AF;
+}
+
+.read-all-label {
+  width: 100px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0C75AF;
+  letter-spacing: 0.25px;
+}
+
+.line {
+  border: 0.5px solid #0C75AF;
+  width: 100%;
+}
+
+.sipnosis-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  row-gap: 16px;
+  margin: 16px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0px 0px 8px #B8E1FF;
+  border-radius: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .sipnosis-container {
+    position: relative;
+    margin: 0 64px 0;
+    top: -57px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .sipnosis-container {
+    margin: 0;
+    top: 0px;
+    width: 30%;
+    height: 100%;
+    padding: 32px 16px;
+  }
+  .line, .expand-section {
+    display: none;
+  }
+  #extra-sipnosis-description {
+    display: inline;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 50px;
+  box-sizing: border-box;
+}
+
+.crew-image-container {
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+
+.crew-filter {
+  position: absolute;
+  width: 100%;
+  height: 163px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91%);
+  bottom: -1px;
+}
+
+.crew-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo-header {
+  display: none;
+  width: 163px;
+  height: 58px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px 0;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #171717;
+  letter-spacing: 0.1px;
+}
+
+.see-all-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0C75AF;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+
+#flex-scroll {
+  display: flex;
+  overflow: auto;
+  gap: 15px;
+  margin-left: 16px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.item-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .crew-image-container {
+    height: 444px;
+  }
+  .crew-filter {
+    display: none;
+  }
+  #flex-scroll {
+    margin-left: 0px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .section-header {
+    padding: 0px;
+  }
+  .bottom {
+    margin: 0 64px 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .top {
+    flex-direction: row;
+    margin: 0 170px 0;
+    height: 628px;
+  }
+  .crew-image-container {
+    width: 70%;
+    height: 100%;
+    border-radius: 16px 0px 0px 16px;
+  }
+  .bottom {
+    margin: 48px 170px 0;
+  }
+  .section-title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #171717;
+    letter-spacing: default;
+  }
+}
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.custom-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 38px;
+  justify-content: center;
+  height: 271px;
+  background: #0C75AF;
+  margin-top: 70px;
+}
+
+.footer-image {
+  width: 97px;
+  height: 89px;
+}
+
+.footer-text {
+  width: 286px;
+  height: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .custom-footer {
+    flex-direction: row;
+    gap: 38px;
+  }
+}
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.characters-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  row-gap: 32px;
+}
+
+.characters-container {
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  height: 231px;
+  position: relative;
+}
+
+#character-img {
+  border-radius: 19px;
+}
+
+.characters-item {
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  width: 182px;
+  height: 231px;
+}
+
+.text-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  letter-spacing: -0.02em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 175px;
+}
+
+.filter-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #000000 97%);
+  mix-blend-mode: multiply;
+  border-radius: 19px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .characters-item {
+    width: 145px;
+    height: 184px;
+  }
+  .characters-container {
+    height: 184px;
+  }
+  .text-item {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    letter-spacing: 0.01px;
+    top: 140px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .characters-item {
+    width: 220px;
+    height: 279px;
+  }
+  .characters-container {
+    height: 280px;
+  }
+  .text-item {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: white;
+    letter-spacing: default;
+    top: 213px;
+  }
+}
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.islands-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  row-gap: 32px;
+}
+
+.islands-container {
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  height: 193px;
+  position: relative;
+}
+
+.island-item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 194px;
+  height: 193px;
+}
+
+.island-caption-container {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  width: 178px;
+  height: 48px;
+  top: 137px;
+  background: rgba(0, 96, 150, 0.59);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+}
+
+#island-img {
+  border-radius: 6px;
+}
+
+.island-caption-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+  letter-spacing: default;
+}
+
+.island-caption-location {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #F4F4F4;
+  letter-spacing: 0.4px;
+}
+
+.island-text {
+  position: relative;
+  align-self: center;
+  left: 15px;
+}
+
+.material-icons.location-icon {
+  color: rgb(255, 255, 255);
+  font-size: small;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .island-item {
+    width: 200px;
+    height: 200px;
+  }
+  .islands-container {
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .island-item {
+    width: 300px;
+    height: 298px;
+  }
+  .islands-container {
+    height: 299px;
+  }
+  .island-caption-container {
+    width: 275px;
+    height: 74px;
+    top: 212px;
+  }
+  .island-caption-title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    letter-spacing: 0.1px;
+  }
+  .island-caption-location {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F4F4F4;
+    letter-spacing: 0.15px;
+  }
+  .island-text {
+    left: 23px;
+  }
+}
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary short description for the file
+ */
+.mist-object-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  row-gap: 32px;
+}
+
+.mist-object-container {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 428px;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0 16px 0;
+  box-sizing: border-box;
+}
+
+.mist-object-item {
+  display: flex;
+  position: relative;
+  width: 358px;
+  height: 132px;
+}
+
+.mist-object-img {
+  width: 175px;
+  height: 132px;
+  border-radius: 8px;
+}
+
+.mist-object-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 117px;
+  width: 241px;
+  height: 100%;
+  background: rgba(0, 96, 150, 0.59);
+  backdrop-filter: blur(4px);
+  border-radius: 0px 6px 6px 0px;
+  overflow: auto;
+}
+
+.mist-object-caption-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+  letter-spacing: default;
+  margin: 5px;
+}
+
+.mist-object-caption-description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #F4F4F4;
+  letter-spacing: default;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablet: */
+  .mist-object-container {
+    padding: 0;
+    height: 370px;
+  }
+  .mist-object-item {
+    width: 310px;
+    height: 175px;
+  }
+  .mist-object-img {
+    width: 181px;
+    height: 175px;
+    object-fit: cover;
+  }
+  .mist-object-text {
+    left: 110px;
+    width: 200px;
+    height: 175px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .mist-object-container {
+    height: 100%;
+  }
+  .mist-object-item {
+    width: 461px;
+    height: 254px;
+  }
+  .mist-object-img {
+    width: 263px;
+    height: 254px;
+  }
+  .mist-object-text {
+    left: 164px;
+    width: 297px;
+    height: 254px;
+  }
+  .mist-object-caption-title {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    letter-spacing: 0.1px;
+    margin: 5px;
+  }
+  .mist-object-caption-description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F4F4F4;
+    letter-spacing: 0.15px;
+    margin: 5px;
+  }
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
